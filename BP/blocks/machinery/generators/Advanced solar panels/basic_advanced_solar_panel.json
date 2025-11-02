@@ -78,7 +78,7 @@
 							"render_method": "alpha_test"
 						}
 					},
-					"minecraft:light_emission": 4
+					"minecraft:light_emission": 6
 				}
 			}
 		]
