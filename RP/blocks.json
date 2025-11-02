@@ -1,0 +1,6 @@
+{
+	"utilitycraft:basic_poop_generator": {
+		"sound": "stone",
+		"textures": "utilitycraft_basic_poop_generator_off"
+	}
+}

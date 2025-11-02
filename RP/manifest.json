@@ -1,0 +1,43 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Ryno091510",
+			"¿Blatant"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.52"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			21,
+			120
+		],
+		"uuid": "48555980-6c0f-4321-8bb9-b835617df671",
+		"version": [
+			1,
+			0,
+			2
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "75dd2c63-78cf-4b9f-ac8f-a92de3b0f7a9",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}
