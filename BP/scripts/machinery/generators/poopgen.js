@@ -1,5 +1,5 @@
 import { Generator, Energy } from '../managers.js'
-import { poopFuels } from "../../config/recipes/fuel.js";
+import { poopFuels } from "../../config/recipes/fuels.js";
 
 const COLORS = DoriosAPI.constants.textColors
 

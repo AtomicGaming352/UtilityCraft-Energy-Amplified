@@ -30,6 +30,35 @@
 				0,
 				0
 			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "72024e8d-e990-487d-bc8c-277ce8e8a192",
+			"entry": "scripts/main.js",
+			"version": [
+				3,
+				2,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "48555980-6c0f-4321-8bb9-b835617df671",
+			"version": [
+				1,
+				0,
+				2
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.1.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.0.0"
 		}
 	]
 }

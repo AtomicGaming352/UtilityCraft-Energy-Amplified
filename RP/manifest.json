@@ -31,5 +31,15 @@
 				0
 			]
 		}
+	],
+	"dependencies": [
+		{
+			"uuid": "19825b18-e44e-4e17-ac83-5c25cdc0ad59",
+			"version": [
+				1,
+				0,
+				2
+			]
+		}
 	]
 }

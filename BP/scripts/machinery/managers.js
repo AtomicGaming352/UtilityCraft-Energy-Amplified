@@ -6,6 +6,7 @@ const COLORS = DoriosAPI.constants.textColors
 
 globalThis.worldLoaded = false;
 globalThis.tickCount = 0;
+globalThis.tickSpeed = 10
 
 system.runInterval(() => {
     globalThis.tickCount += 2
