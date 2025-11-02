@@ -4,15 +4,7 @@
 		"authors": [
 			"Ryno091510",
 			"¿Blatant"
-		],
-		"generated_with": {
-			"bridge": [
-				"2.7.52"
-			],
-			"dash": [
-				"0.11.7"
-			]
-		}
+		]
 	},
 	"header": {
 		"name": "pack.name",
