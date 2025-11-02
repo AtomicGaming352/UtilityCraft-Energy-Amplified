@@ -35,7 +35,7 @@
 			"minecraft:geometry": "geometry.utilitycraft_block_2",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "utilitycraft_basic_poop_generator_off",
+					"texture": "utilitycraft_advanced_poop_generator_off",
 					"render_method": "alpha_test"
 				}
 			},
