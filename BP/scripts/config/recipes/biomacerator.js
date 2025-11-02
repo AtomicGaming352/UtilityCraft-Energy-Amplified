@@ -16,7 +16,7 @@
 
 */
 
-export const pressRecipes = {
+export const biomaceratorRecipes = {
 
     "minecraft:rotten_flesh": { output: "utilitycraft:poop", required: 32 },
 
