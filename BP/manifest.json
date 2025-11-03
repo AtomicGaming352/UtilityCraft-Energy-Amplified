@@ -3,12 +3,13 @@
 	"metadata": {
 		"authors": [
 			"Ryno091510",
-			"¿Blatant"
+			"¿Blatant(aka AtomicGaming352)",
+			"Akizume"
 		]
 	},
 	"header": {
-		"name": "pack.name",
-		"description": "pack.description",
+		"name": "UtilityCraft:Energy Amplified! BP",
+		"description": "The Behavior pack for a UtilityCraft Expansion that focuses on adding a few machines and a heck ton of new generators!",
 		"min_engine_version": [
 			1,
 			21,
