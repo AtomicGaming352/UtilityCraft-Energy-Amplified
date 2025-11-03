@@ -18,6 +18,6 @@ tile.utilitycraft_advanced_bio_generator.name=Gerador Bio Avançado
 
 # Blocks/Machinery/Generators/Poop Gen
 tile.utilitycraft_basic_poop_generator.name=Gerador Básico de Cocô
-tile.utilitycraft_ultimate_poop_generator.name=Gerador de Cocô Especializado
-tile.utilitycraft_ultimate_poop_generator.name=Gerador de Cocô Definitivo
 tile.utilitycraft_advanced_poop_generator.name=Gerador Avançado de Cocô
+tile.utilitycraft_expert_poop_generator.name=Gerador de Cocô Especializado
+tile.utilitycraft_ultimate_poop_generator.name=Gerador de Cocô Definitivo
