@@ -4,7 +4,7 @@ pack.description=
 # Items
 item.utilitycraft_biomass.name=Biomasa
 item.utilitycraft_compost.name=Abono
-item.utilitycraft_poop.name=Caca
+item.utilitycraft_biowaste.name=Caca
 
 # Blocks/Machinery/Generators/Advanced Solar Panels
 tile.utilitycraft_basic_advanced_solar_panel.name=Panel Solar Básico Avanzado
@@ -16,8 +16,8 @@ tile.utilitycraft_ultimate_advanced_solar_panel.name=Panel Solar Avanzado Defini
 tile.utilitycraft_basic_bio_generator.name=Generador Básico de Bioenergía
 tile.utilitycraft_advanced_bio_generator.name=Generador Biológico Avanzado
 
-# Blocks/Machinery/Generators/Poop Gen
-tile.utilitycraft_basic_poop_generator.name=Generador Básico de Caca
-tile.utilitycraft_advanced_poop_generator.name=Generador Avanzado de Caca
-tile.utilitycraft_expert_poop_generator.name=Generador Experto de Caca
-tile.utilitycraft_ultimate_poop_generator.name=Generador Definitivo de Caca
+# Blocks/Machinery/Generators/biowaste Gen
+tile.utilitycraft_basic_biowaste_generator.name=Generador Básico de Caca
+tile.utilitycraft_advanced_biowaste_generator.name=Generador Avanzado de Caca
+tile.utilitycraft_expert_biowaste_generator.name=Generador Experto de Caca
+tile.utilitycraft_ultimate_biowaste_generator.name=Generador Definitivo de Caca

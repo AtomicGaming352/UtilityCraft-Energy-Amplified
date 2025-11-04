@@ -1,0 +1,23 @@
+pack.name=Utility Gen RP
+pack.description=
+
+# Items
+item.utilitycraft_biomass.name=Biomassa
+item.utilitycraft_compost.name=Adubo
+item.utilitycraft_biowaste.name=Cocô
+
+# Blocks/Machinery/Generators/Advanced Solar Panels
+tile.utilitycraft_basic_advanced_solar_panel.name=Painel Solar Básico Avançado
+tile.utilitycraft_advanced_advanced_solar_panel.name=Painel Solar Avançado
+tile.utilitycraft_expert_advanced_solar_panel.name=Painel Solar Avançado Especializado
+tile.utilitycraft_ultimate_advanced_solar_panel.name=Painel Solar Avançado Definitivo
+
+# Blocks/Machinery/Generators/Biogens
+tile.utilitycraft_basic_bio_generator.name=Gerador Bio Básico
+tile.utilitycraft_advanced_bio_generator.name=Gerador Bio Avançado
+
+# Blocks/Machinery/Generators/biowaste Gen
+tile.utilitycraft_basic_biowaste_generator.name=Gerador Básico de Cocô
+tile.utilitycraft_advanced_biowaste_generator.name=Gerador Avançado de Cocô
+tile.utilitycraft_expert_biowaste_generator.name=Gerador de Cocô Especializado
+tile.utilitycraft_ultimate_biowaste_generator.name=Gerador de Cocô Definitivo
