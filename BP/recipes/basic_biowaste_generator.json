@@ -1,0 +1,42 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "utilitycraft:basic_biowaste_generator"
+        },
+        "tags": [
+            "utilitycraft_workbench"
+        ],
+        "pattern": [
+            "SBS",
+            "BFB",
+            "PRP"
+        ],
+        "key": {
+            "S": {
+                "item": "utilitycraft:steel_ingot"
+            },
+            "F": {
+                "item": "minecraft:furnace"
+            },
+            "B": {
+                "item": "utilitycraft:basic_chip"
+            },
+            "P": {
+                "item": "utilitycraft:biowaste"
+            },
+            "R": {
+                "item": "minecraft:redstone_block"
+            }
+        },
+        "result": {
+            "item": "utilitycraft:basic_biowaste_generator",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:biowaste"
+            }
+        ]
+    }
+}
