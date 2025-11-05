@@ -1,0 +1,78 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "utilitycraft:basic_lunar_panel",
+      "menu_category": { "category": "construction" },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"],
+          "y_rotation_offset": 180
+        }
+      },
+      "states": {
+        "utilitycraft:on": [false, true]
+      }
+    },
+    "components": {
+      "utilitycraft:lunar_panel": {
+        "entity": { "name": "solar_panel", "type": "passive" },
+        "generator": {
+          "energy_cap": 64000,
+          "rate_speed_base": 8
+        }
+      },
+      "minecraft:geometry": "geometry.utilitycraft_block_2",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "utilitycraft_basic_lunar_panel_off",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:tick": { "interval_range": [2, 2] },
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 1 },
+      "minecraft:destructible_by_explosion": false,
+      "tag:dorios:energy": {},
+      "tag:dorios:item": {},
+      "tag:minecraft:is_pickaxe_item_destructible": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' ",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' ",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' ",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' ",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('utilitycraft:on') == true ",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "utilitycraft_basic_lunar_panel_on",
+              "render_method": "alpha_test"
+            }
+          },
+          "minecraft:light_emission": 3
+        }
+      }
+    ]
+  }
+}
