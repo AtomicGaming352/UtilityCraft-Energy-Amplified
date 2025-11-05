@@ -1,0 +1,43 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "utilitycraft:basic_biowaste_generator"
+        },
+        "tags": [
+            "utilitycraft_workbench"
+        ],
+        "pattern": [
+            "EAE",
+            "AWA",
+            "PRP"
+        ],
+        "key": {
+            "E": {
+                "item": "utilitycraft:energized_iron_plate"
+            },
+            "W": {
+                "item": "utilitycraft:basic_biowaste_generator"
+            },
+            "A": {
+                "item": "utilitycraft:advanced_chip"
+            },
+            "B": {
+                "item": "utilitycraft:biowaste"
+            },
+            "R": {
+                "item": "minecraft:redstone_block"
+            }
+        },
+        "result": {
+            "item": "utilitycraft:advanced_biowaste_generator",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:biowaste"
+            }
+        ]
+    }
+
+}
