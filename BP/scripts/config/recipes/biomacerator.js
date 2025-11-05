@@ -18,11 +18,11 @@
 
 export const biomaceratorRecipes = {
 
-    "minecraft:rotten_flesh": { output: "utilitycraft:poop", amount: 24, required: 32 },
+    "minecraft:rotten_flesh": { output: "utilitycraft:biowaste", required: 32 },
 
-    "minecraft:poop": { output: "utilitycraft:compost", amount: 24, required: 32 },
+    "utilitycraft:biowaste": { output: "utilitycraft:compost", required: 32 },
 
-    "minecraft:compost": { output: "utilitycraft:biomass", amount: 16,required: 24 },
+    "minecraft:compost": { output: "utilitycraft:biomass", required: 16 },
 
     "minecraft:fermented_spider_eye": { output: "utilitycraft:compost", required: 48 },
 
