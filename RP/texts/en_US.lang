@@ -1,4 +1,4 @@
 pack.name=Utility Gen RP
 pack.description=
-tile.utilitycraft:basic_poop_generator.name=Basic Poop Generator
-item.utilitycraft:poop=Poop
+tile.utilitycraft:basic_biowaste_generator.name=Basic Biowaste Generator
+item.utilitycraft:biowaste=Biowaste
