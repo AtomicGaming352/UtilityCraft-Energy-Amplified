@@ -16,7 +16,10 @@
     },
     "components": {
       "utilitycraft:lunar_panel": {
-        "entity": { "name": "solar_panel", "type": "passive" },
+        "entity": {
+          "name": "solar_panel",
+          "type": "passive"
+        },
         "generator": {
           "energy_cap": 64000,
           "rate_speed_base": 8

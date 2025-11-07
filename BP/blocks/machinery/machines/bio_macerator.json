@@ -28,12 +28,13 @@
 			}
 		},
 		"components": {
-			"utilitycraft:machine_simple": {
+			"utilitycraft:simple_machine": {
 				"rotation": "facing",
 				"entity": {
+					"name": "crusher",
 					"input_type": "simple",
 					"output_type": "simple",
-					"inventory_size": 7
+					"slot_count": 7
 				},
 				"machine": {
 					"energy_cap": 64000,
@@ -46,7 +47,10 @@
 				}
 			},
 			"utilitycraft:machine_recipes": {
-				"minecraft:rotten_flesh": { "output": "utilitycraft:biowaste", "amount":2, "required": 4 },
+				"minecraft:rotten_flesh": {
+					"output": "utilitycraft:biowaste",
+					"amount":2,
+					"required": 4 }
 			},
 			"minecraft:geometry": "geometry.utilitycraft_block_2",
 			"minecraft:material_instances": {

@@ -14,8 +14,14 @@
     },
     "components": {
       "utilitycraft:bio_generator": {
-        "entity": { "name": "furnator", "type": "simple" },
-        "generator": { "energy_cap": 256000, "rate_speed_base": 140 }
+        "entity": { 
+          "name": "bio_generator", 
+          "type": "simple" 
+        },
+        "generator": { 
+          "energy_cap": 256000, 
+          "rate_speed_base": 140 
+        }
       },
       "minecraft:geometry": "geometry.utilitycraft_block_2",
       "minecraft:material_instances": {
