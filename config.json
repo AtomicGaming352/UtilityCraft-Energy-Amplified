@@ -1,19 +1,15 @@
 {
 	"type": "minecraftBedrock",
-	"name": "Utility Gen",
-	"namespace": "utilitycraft",
+	"name": "UtilityCraft-Energy-Amplified-alpha-0.0.1",
+	"namespace": "bridge",
 	"authors": [
-		"Ryno091510 and ¿Blatant"
+		"Ryno091510",
+		"¿Blatant(aka AtomicGaming352)",
+		"AsherHinba"
 	],
-	"targetVersion": "1.21.120",
-	"description": "",
-	"experimentalGameplay": {
-		"upcomingCreatorFeatures": false,
-		"experimentalCreatorCameraFeatures": false,
-		"enableGameTestFramework": false,
-		"renderDragonFeatures": false,
-		"educationEdition": false
-	},
+	"targetVersion": "1.21.130",
+	"description": "The Behavior pack for a UtilityCraft Expansion that focuses on adding a few machines and a heck ton of new generators!",
+	"experimentalGameplay": {},
 	"bdsProject": false,
 	"packs": {
 		"behaviorPack": "./BP",
@@ -36,7 +32,7 @@
 			[
 				"simpleRewrite",
 				{
-					"packName": "Utility Gen"
+					"packName": "UtilityCraft-Energy-Amplified-alpha-0.0.1"
 				}
 			]
 		]
