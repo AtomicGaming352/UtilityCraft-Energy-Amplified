@@ -34,7 +34,7 @@
 					"name": "crusher",
 					"input_type": "simple",
 					"output_type": "simple",
-					"slot_count": 7
+					"inventory_size": 7
 				},
 				"machine": {
 					"energy_cap": 64000,
