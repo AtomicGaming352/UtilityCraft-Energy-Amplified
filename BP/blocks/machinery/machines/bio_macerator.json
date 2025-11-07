@@ -46,7 +46,7 @@
 				}
 			},
 			"utilitycraft:machine_recipes": {
-				"type": "biomacerator"
+				"minecraft:rotten_flesh": { "output": "utilitycraft:biowaste", "amount":2, "required": 4 },
 			},
 			"minecraft:geometry": "geometry.utilitycraft_block_2",
 			"minecraft:material_instances": {
