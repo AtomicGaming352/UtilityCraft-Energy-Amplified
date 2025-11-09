@@ -15,7 +15,7 @@
     "components": {
       "utilitycraft:bio_generator": {
         "entity": { 
-          "name": "bio_generator", 
+          "name": "furnator", 
           "type": "simple" 
         },
         "generator": { 
