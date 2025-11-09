@@ -49,8 +49,12 @@
 			"utilitycraft:machine_recipes": {
 				"minecraft:rotten_flesh": {
 					"output": "utilitycraft:biowaste",
-					"amount":2,
-					"required": 4 }
+					"amount": 1,
+					"required": 2 },
+				"minecraft:moss_block": {
+					"output": "utilitycraft:biomass",
+					"amount": 1,
+					"required": 12 }
 			},
 			"minecraft:geometry": "geometry.utilitycraft_block_2",
 			"minecraft:material_instances": {
