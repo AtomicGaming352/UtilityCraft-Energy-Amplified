@@ -10,7 +10,7 @@
         "pattern": [
             "EAE",
             "AWA",
-            "PRP"
+            "PGP"
         ],
         "key": {
             "E": {
@@ -25,8 +25,8 @@
             "B": {
                 "item": "utilitycraft:biowaste"
             },
-            "R": {
-                "item": "minecraft:redstone_block"
+            "G": {
+                "item": "utilitycraft:advanced_bio_generator"
             }
         },
         "result": {
