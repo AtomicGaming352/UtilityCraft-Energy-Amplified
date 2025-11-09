@@ -9,15 +9,15 @@
         ],
         "pattern": [
             "SBS",
-            "BFB",
+            "BGB",
             "PRP"
         ],
         "key": {
             "S": {
                 "item": "utilitycraft:steel_ingot"
             },
-            "F": {
-                "item": "minecraft:furnace"
+            "G": {
+                "item": "utilitycraft:bio_generator"
             },
             "B": {
                 "item": "utilitycraft:basic_chip"
@@ -40,3 +40,4 @@
         ]
     }
 }
+
