@@ -17,7 +17,7 @@
                 "item": "utilitycraft:steel_ingot"
             },
             "G": {
-                "item": "utilitycraft:bio_generator"
+                "item": "utilitycraft:basic_bio_generator"
             },
             "B": {
                 "item": "utilitycraft:basic_chip"
@@ -40,4 +40,5 @@
         ]
     }
 }
+
 
