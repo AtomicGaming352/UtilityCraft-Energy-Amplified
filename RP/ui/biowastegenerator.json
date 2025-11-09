@@ -1,5 +1,5 @@
 {
-    "namespace": "furnator",
+    "namespace": "Biowaste Generator",
     "furnator_top": {
         "type": "collection_panel",
         "anchor_from": "center",
