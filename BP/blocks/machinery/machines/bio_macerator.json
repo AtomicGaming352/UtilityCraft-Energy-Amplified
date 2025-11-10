@@ -54,7 +54,19 @@
 				"minecraft:moss_block": {
 					"output": "utilitycraft:biomass",
 					"amount": 1,
-					"required": 12 }
+					"required": 12 },
+				"minecraft:wheat": {
+					"output": "utilitycraft:compost",
+					"amount": 1,
+					"required": 4 },
+				"minecraft:carrot": {
+					"output": "utilitycraft:compost",
+					"amount": 1,
+					"required": 4 },
+				"minecraft:potato": {
+					"output": "utilitycraft:compost",
+					"amount": 1,
+					"required": 5 },
 			},
 			"minecraft:geometry": "geometry.utilitycraft_block_2",
 			"minecraft:material_instances": {
