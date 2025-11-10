@@ -1,5 +1,4 @@
 import './managers.js'
-import './machines/machine_simple.js'
 import './generators/biogen.js'
 import './generators/poopgen.js'
 import './generators/lunarpanel.js'
