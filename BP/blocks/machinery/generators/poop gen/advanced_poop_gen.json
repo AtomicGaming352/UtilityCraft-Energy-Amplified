@@ -28,8 +28,8 @@
 					"type": "simple"
 				},
 				"generator": {
-					"energy_cap": 64000,
-					"rate_speed_base": 140
+					"energy_cap": 128000,
+					"rate_speed_base": 120
 				}
 			},
 			"minecraft:geometry": "geometry.utilitycraft_block_2",
