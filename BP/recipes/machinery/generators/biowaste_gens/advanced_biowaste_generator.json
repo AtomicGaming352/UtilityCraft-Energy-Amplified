@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "utilitycraft:basic_biowaste_generator"
+            "identifier": "utilitycraft:advanced_biowaste_generator"
         },
         "tags": [
             "utilitycraft_workbench"
