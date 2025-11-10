@@ -9,7 +9,7 @@
         ],
         "pattern": [
             "EAE",
-            "AFA",
+            "ABA",
             "PRP"
         ],
         "key": {
@@ -30,7 +30,7 @@
             }
         },
         "result": {
-            "item": "utilitycraft:basic_bio_generator",
+            "item": "utilitycraft:advanced_bio_generator",
             "count": 1
         },
         "unlock": [
