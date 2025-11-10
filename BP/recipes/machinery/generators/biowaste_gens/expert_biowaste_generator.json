@@ -1,0 +1,43 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "utilitycraft:expert_biowaste_generator"
+        },
+        "tags": [
+            "utilitycraft_workbench"
+        ],
+        "pattern": [
+            "DCD",
+            "CWC",
+            "PEP"
+        ],
+        "key": {
+            "D": {
+                "item": "utilitycraft:diamond_dust"
+            },
+            "W": {
+                "item": "utilitycraft:advanced_biowaste_generator"
+            },
+            "C": {
+                "item": "utilitycraft:expert_chip"
+            },
+            "P": {
+                "item": "utilitycraft:biowaste"
+            },
+            "E": {
+                "item": "utilitycraft:energized_iron_block"
+            }
+        },
+        "result": {
+            "item": "utilitycraft:expert_biowaste_generator",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:advanced_biowaste_generator"
+            }
+        ]
+    }
+
+}
