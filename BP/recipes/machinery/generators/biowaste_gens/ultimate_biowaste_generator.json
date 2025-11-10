@@ -1,0 +1,43 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "utilitycraft:ultimate_biowaste_generator"
+        },
+        "tags": [
+            "utilitycraft_workbench"
+        ],
+        "pattern": [
+            "NUN",
+            "UWU",
+            "PGP"
+        ],
+        "key": {
+            "N": {
+                "item": "utilitycraft:netherite_plate"
+            },
+            "W": {
+                "item": "utilitycraft:expert_biowaste_generator"
+            },
+            "U": {
+                "item": "utilitycraft:ultimate_chip"
+            },
+            "P": {
+                "item": "utilitycraft:biowaste"
+            },
+            "G": {
+                "item": "utilitycraft:energized_iron_block"
+            }
+        },
+        "result": {
+            "item": "utilitycraft:ultimate_biowaste_generator",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:expert_biowaste_generator"
+            }
+        ]
+    }
+
+}
