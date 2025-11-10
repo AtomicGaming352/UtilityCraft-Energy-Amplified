@@ -1,0 +1,42 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "utilitycraft:ultimate_bio_generator"
+        },
+        "tags": [
+            "utilitycraft_workbench"
+        ],
+        "pattern": [
+            "NUN",
+            "UEU",
+            "PRP"
+        ],
+        "key": {
+            "N": {
+                "item": "utilitycraft:netherrite_plate"
+            },
+            "E": {
+                "item": "utilitycraft:expert_bio_generator"
+            },
+            "U": {
+                "item": "utilitycraft:ultimate_chip"
+            },
+            "P": {
+                "item": "utilitycraft:biomass"
+            },
+            "R": {
+                "item": "utilitycraft:energized_iron_block"
+            }
+        },
+        "result": {
+            "item": "utilitycraft:ultimate_bio_generator",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:expert_bio_generator"
+            }
+        ]
+    }
+}
