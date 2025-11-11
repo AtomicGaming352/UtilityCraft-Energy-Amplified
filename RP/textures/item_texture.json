@@ -1,10 +1,13 @@
 {
 	"texture_data": {
-		"utilitycraft_poop": {
-			"textures": "textures/items/poop"
-		},
 		"utilitycraft_biowaste":{
 			"textures": "textures/items/biowaste"
+		},
+		"utilitycraft_compost": {
+			"textures": "textures/items/compost"
+		},
+		"utilitycraft_biomass": {
+			"textures": "textures/items/biomass"
 		}
 	}
 }
