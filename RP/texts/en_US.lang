@@ -1,4 +1,7 @@
 pack.name=Utility Gen RP
 pack.description=
 tile.utilitycraft:basic_biowaste_generator.name=Basic Biowaste Generator
+tile.utilitycraft:advanced_biowaste_generator.name=Advanced Biowaste Generator
+tile.utilitycraft:expert_biowaste_generator.name=Expert Biowaste Generator
+tile.utilitycraft:ultimate_biowaste_generator.name=Ultimate Biowaste Generator
 item.utilitycraft:biowaste=Biowaste
