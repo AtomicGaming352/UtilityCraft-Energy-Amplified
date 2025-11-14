@@ -21,8 +21,8 @@
           "type": "passive"
         },
         "generator": {
-          "energy_cap": 64000,
-          "rate_speed_base": 8
+          "energy_cap": 512000,
+          "rate_speed_base": 192
         }
       },
       "minecraft:geometry": "geometry.utilitycraft_block_2",
