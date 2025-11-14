@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "utilitycraft:expert_poop_generator",
+			"identifier": "utilitycraft:expert_biowaste_generator",
 			"menu_category": {
 				"category": "construction"
 			},
