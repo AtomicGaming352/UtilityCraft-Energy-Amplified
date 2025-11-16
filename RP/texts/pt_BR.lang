@@ -1,23 +1,27 @@
-pack.name=Utility Gen RP
-pack.description=
+## Items - Itens
+item.utilitycraft:biomass=Biomassa
+item.utilitycraft:compost=Adubo
+item.utilitycraft:biowaste=Restos Orgânicos
 
-## Items
-item.utilitycraft_biomass.name=Biomassa
-item.utilitycraft_compost.name=Adubo
-item.utilitycraft_biowaste.name=Cocô
+## Advanced Solar Panels - Painéis Solares Avançados (Tier 2)
+tile.utilitycraft:basic_advanced_solar_panel.name=Painel Solar T2 Básico
+tile.utilitycraft:advanced_advanced_solar_panel.name=Painel Solar T2 Avançado
+tile.utilitycraft:expert_advanced_solar_panel.name=Painel Solar T2 Expert
+tile.utilitycraft:ultimate_advanced_solar_panel.name=Painel Solar T2 Supremo
 
-## Blocks/Machinery/Generators/Advanced Solar Panels
-tile.utilitycraft_basic_advanced_solar_panel.name=Painel Solar Básico Avançado
-tile.utilitycraft_advanced_advanced_solar_panel.name=Painel Solar Avançado
-tile.utilitycraft_expert_advanced_solar_panel.name=Painel Solar Avançado Especializado
-tile.utilitycraft_ultimate_advanced_solar_panel.name=Painel Solar Avançado Definitivo
+## Bio Generators - Bio-Geradores
+tile.utilitycraft:basic_bio_generator.name=Bio-Gerador Básico
+tile.utilitycraft:advanced_bio_generator.name=Bio-Gerador Avançado
+tile.utilitycraft:expert_bio_generator.name=Bio-Gerador Expert
+tile.utilitycraft:ultimate_bio_generator.name=Bio-Gerador Supremo
 
-## Blocks/Machinery/Generators/Biogens
-tile.utilitycraft_basic_bio_generator.name=Gerador Bio Básico
-tile.utilitycraft_advanced_bio_generator.name=Gerador Bio Avançado
+## Bio Waste Generators - Geradores de Restos Orgânicos
+tile.utilitycraft:basic_biowaste_generator.name=Gerador de Restos Orgânicos Básico
+tile.utilitycraft:advanced_biowaste_generator.name=Gerador de Restos Orgânicos Avançado
+tile.utilitycraft:expert_biowaste_generator.name=Gerador de Restos Orgânicos Expert
+tile.utilitycraft:ultimate_biowaste_generator.name=Gerador de Restos Orgânicos Supremo
 
-## Blocks/Machinery/Generators/biowaste Gen
-tile.utilitycraft_basic_biowaste_generator.name=Gerador Básico de Cocô
-tile.utilitycraft_advanced_biowaste_generator.name=Gerador Avançado de Cocô
-tile.utilitycraft_expert_biowaste_generator.name=Gerador de Cocô Especializado
-tile.utilitycraft_ultimate_biowaste_generator.name=Gerador de Cocô Definitivo
+## Entities - Entidades
+entity.utilitycraft:bio_macerator.name=Biomacerador
+entity.utilitycraft:biogenerator.name=Biogerador
+entity.utilitycraft:biowaste_generator.name=Gerador de Restos Orgânicos

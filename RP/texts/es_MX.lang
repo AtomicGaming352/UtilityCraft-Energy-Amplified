@@ -1,23 +1,28 @@
-pack.name=Utility Gen RP
-pack.description=
 
-## Items
-item.utilitycraft_biomass.name=Biomasa
-item.utilitycraft_compost.name=Abono
-item.utilitycraft_biowaste.name=Caca
+## Items - Objetos
+item.utilitycraft:biomass=Biomasa
+item.utilitycraft:compost=Abono
+item.utilitycraft:biowaste=Residuos Orgánicos
 
-## Blocks/Machinery/Generators/Advanced Solar Panels
-tile.utilitycraft_basic_advanced_solar_panel.name=Panel Solar Básico Avanzado
-tile.utilitycraft_advanced_advanced_solar_panel.name=Panel Solar Avanzado Avanzado
-tile.utilitycraft_expert_advanced_solar_panel.name=Panel Solar Avanzado para Expertos
-tile.utilitycraft_ultimate_advanced_solar_panel.name=Panel Solar Avanzado Definitivo
+## Advanced Solar Panels - Paneles Solares Avanzados (Tier 2)
+tile.utilitycraft:basic_advanced_solar_panel.name=Panel Solar T2 Básico
+tile.utilitycraft:advanced_advanced_solar_panel.name=Panel Solar T2 Avanzado
+tile.utilitycraft:expert_advanced_solar_panel.name=Panel Solar T2 Experto
+tile.utilitycraft:ultimate_advanced_solar_panel.name=Panel Solar T2 Definitivo
 
-## Blocks/Machinery/Generators/Biogens
-tile.utilitycraft_basic_bio_generator.name=Generador Básico de Bioenergía
-tile.utilitycraft_advanced_bio_generator.name=Generador Biológico Avanzado
+## Bio Generators - Bio Generadores
+tile.utilitycraft:basic_bio_generator.name=Bio Generador Básico
+tile.utilitycraft:advanced_bio_generator.name=Bio Generador Avanzado
+tile.utilitycraft:expert_bio_generator.name=Bio Generador Experto
+tile.utilitycraft:ultimate_bio_generator.name=Bio Generador Definitivo
 
-## Blocks/Machinery/Generators/biowaste Gen
-tile.utilitycraft_basic_biowaste_generator.name=Generador Básico de Caca
-tile.utilitycraft_advanced_biowaste_generator.name=Generador Avanzado de Caca
-tile.utilitycraft_expert_biowaste_generator.name=Generador Experto de Caca
-tile.utilitycraft_ultimate_biowaste_generator.name=Generador Definitivo de Caca
+## Bio Waste Generators - Generadores de Residuos Orgánicos
+tile.utilitycraft:basic_biowaste_generator.name=Generador de Residuos Orgánicos Básico
+tile.utilitycraft:advanced_biowaste_generator.name=Generador de Residuos Orgánicos Avanzado
+tile.utilitycraft:expert_biowaste_generator.name=Generador de Residuos Orgánicos Experto
+tile.utilitycraft:ultimate_biowaste_generator.name=Generador de Residuos Orgánicos Definitivo
+
+## Entities - Entidades
+entity.utilitycraft:bio_macerator.name=Biomacerador
+entity.utilitycraft:biogenerator.name=Bio Generador
+entity.utilitycraft:biowaste_generator.name=Generador de Residuos Orgánicos
