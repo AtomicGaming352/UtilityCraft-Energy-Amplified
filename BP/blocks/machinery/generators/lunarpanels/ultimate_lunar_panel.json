@@ -25,7 +25,7 @@
           "rate_speed_base": 1200
         }
       },
-      "minecraft:geometry": "geometry.utilitycraft_block_2",
+      "minecraft:geometry": "geometry.utilitycraft_solar_panel",
       "minecraft:material_instances": {
         "*": {
           "texture": "utilitycraft_ultimate_lunar_panel_off",

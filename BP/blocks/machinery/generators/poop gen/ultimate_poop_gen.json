@@ -24,7 +24,7 @@
 		"components": {
 			"utilitycraft:poop_generator": {
 				"entity": {
-					"name": "furnator",
+					"name": "biowaste_generator",
 					"type": "simple"
 				},
 				"generator": {

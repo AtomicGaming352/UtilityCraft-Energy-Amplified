@@ -30,5 +30,12 @@
 		},
 		"utilitycraft_ultimate_bio_generator_on": {
 			"textures": "textures/blocks/generators/biogens/ultimate_bio_generator_on"
+		},
+		"utilitycraft_biomacerator_off": {
+			"textures": "textures/blocks/generators/biomacerator_off"
+		},
+		"utilitycraft_biomacerator_on": {
+			"textures": "textures/blocks/generators/biomacerator_on"
 		}
-}}
+	}
+}
