@@ -6,28 +6,28 @@
 		},
 		"utilitycraft_basic_poop_generator_off": {
 			"textures": "textures/blocks/generators/basic_biowaste_generator_off"
-		}
+		},
 		"utilitycraft_basic_bio_generator_off": {
 			"textures": "textures/blocks/generators/biogens/basic_bio_generator_off"
-		}
+		},
 		"utilitycraft_basic_bio_generator_on": {
 			"textures": "textures/blocks/generators/biogens/basic_bio_generator_on"
-		}
+		},
 		"utilitycraft_advanced_bio_generator_off": {
 			"textures": "textures/blocks/generators/biogens/advanced_bio_generator_off"
-		}
+		},
 		"utilitycraft_advanced_bio_generator_on": {
 			"textures": "textures/blocks/generators/biogens/advanced_bio_generator_on"
-		}
+		},
 		"utilitycraft_expert_bio_generator_off": {
 			"textures": "textures/blocks/generators/biogens/expert_bio_generator_off"
-		}
+		},
 		"utilitycraft_expert_bio_generator_on": {
 			"textures": "textures/blocks/generators/biogens/expert_bio_generator_on"
-		}
+		},
 		"utilitycraft_ultimate_bio_generator_off": {
 			"textures": "textures/blocks/generators/biogens/ultimate_bio_generator_off"
-		}
+		},
 		"utilitycraft_ultimate_bio_generator_on": {
 			"textures": "textures/blocks/generators/biogens/ultimate_bio_generator_on"
 		}
