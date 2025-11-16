@@ -5,3 +5,7 @@ tile.utilitycraft:advanced_biowaste_generator.name=Advanced Biowaste Generator
 tile.utilitycraft:expert_biowaste_generator.name=Expert Biowaste Generator
 tile.utilitycraft:ultimate_biowaste_generator.name=Ultimate Biowaste Generator
 item.utilitycraft:biowaste=Biowaste
+tile.utilitycraft:basic_bio_generator.name=Basic Bio Generator
+tile.utilitycraft:advanced_bio_generator.name=Advanced Bio Generator
+tile.utilitycraft:expert_bio_generator.name=Expert Bio Generator
+tile.utilitycraft:ultimate_bio_generator.name=Ultimate Bio Generator
