@@ -1,0 +1,41 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "utilitycraft:T2_advanced_panel"
+		},
+		"tags": [
+			"utilitycraft_workbench"
+		],
+		"key": {
+			"S": {
+				"item": "utilitycraft:speed_upgrade"
+			},
+			"T": {
+				"item": "utilitycraft:basic_advanced_solar_panel"
+			},
+			"E": {
+				"item": "utilitycraft:energized_iron_block"
+			},
+      "P": {
+        "item": "utilitycraft:advanced_solar_panel"
+      },
+      "C": {
+        "item": "utilitycraft:advanced_chip"
+      }
+		},
+		"pattern": [
+			"SPS",
+			"PTP",
+			"CEC"
+		],
+		"result": {
+			"item": "utilitycraft:advanced_advanced_solar_panel"
+		},
+		"unlock": [
+			{
+				"item": "utilitycraft:steel_ingot"
+			}
+		]
+	}
+}
