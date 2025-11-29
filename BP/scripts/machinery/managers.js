@@ -13,6 +13,7 @@ system.runInterval(() => {
     if (globalThis.tickCount == 1000) globalThis.tickCount = 0
 }, 2)
 
+
 //#region Rotation
 
 const FACING = ["up", "down", "north", "south", "east", "west"];
@@ -376,6 +377,7 @@ function loadObjectives(definitions) {
  */
 let objectives = null;
 
+// --- Al cargar el mundo ---
 world.afterEvents.worldLoad.subscribe(() => {
     objectives = loadObjectives([
         ["energy", "Energy"],
@@ -383,10 +385,36 @@ world.afterEvents.worldLoad.subscribe(() => {
         ["energyCap", "Energy Max Capacity"],
         ["energyCapExp", "Energy Max Capacity Exp"],
     ]);
+
+    // Inicializar la propiedad si no existe
+    if (world.getDynamicProperty("loaded") === undefined) {
+        world.setDynamicProperty("loaded", false);
+    }
+
+    worldLoaded = world.getDynamicProperty("loaded");
+
+    if (world.getDimension('overworld').getEntities()[0]) {
+        world.setDynamicProperty("loaded", true);
+        worldLoaded = true;
+    }
+});
+
+// --- Al primer spawn del jugador ---
+world.afterEvents.playerSpawn.subscribe(({ initialSpawn }) => {
+    if (!initialSpawn) return;
     system.runTimeout(() => {
+        world.setDynamicProperty("loaded", true);
         worldLoaded = true;
     }, 50)
 });
+
+// --- Al apagar el mundo ---
+system.beforeEvents.shutdown.subscribe(() => {
+    try {
+        world.setDynamicProperty("loaded", false);
+    } catch { }
+});
+
 //#endregion
 
 export class Generator {
@@ -477,7 +505,7 @@ export class Generator {
     static onDestroy(e) {
         const { block, brokenBlockPermutation, player, dimension: dim } = e;
         const entity = dim.getEntitiesAtBlockLocation(block.location)[0];
-        if (!entity) return;
+        if (!entity) return false;
 
         const energy = new Energy(entity);
         const fluid = new FluidManager(entity)
@@ -501,15 +529,16 @@ export class Generator {
 
         // Drop item and cleanup
         system.run(() => {
-            if (player.getGameMode() == "survival") {
-                dim.getEntities({ type: 'item', maxDistance: 3, location: block.center() }).find(item => {
-                    item.getComponent('minecraft:item')?.itemStack?.typeId == blockItemId
-                }).remove()
+            if (player?.isInSurvival()) {
+                const oldItemEntity = dim.getEntities({ type: 'item', maxDistance: 3, location: block.center() })
+                    .find(item => item.getComponent('minecraft:item')?.itemStack?.typeId === blockItemId);
+                oldItemEntity?.remove()
             };
             Machine.dropAllItems(entity);
             entity.remove();
             dim.spawnItem(blockItem, block.center());
         });
+        return true
     }
 
     /**
@@ -698,8 +727,30 @@ export class Machine {
         this.energy = new Energy(this.entity)
         this.upgrades = this.getUpgradeLevels(settings.machine.upgrades)
         this.boosts = this.calculateBoosts(this.upgrades)
-        this.baseRate = settings.machine.rate_speed_base
-        this.rate = this.baseRate * this.boosts.speed * this.boosts.consumption * tickSpeed
+        this.baseRate = settings.machine.rate_speed_base * this.boosts.speed * this.boosts.consumption
+        this.rate = this.baseRate * tickSpeed
+    }
+
+    getTransferCooldown() {
+        return Math.max(0, this.entity.getDynamicProperty("dorios:transfer_cooldown") ?? 0);
+    }
+
+    setTransferCooldown(ticks) {
+        this.entity.setDynamicProperty("dorios:transfer_cooldown", Math.max(0, Math.floor(ticks ?? 0)));
+    }
+
+    holdTransfers(ticks = 1) {
+        if (!ticks || ticks <= 0) return;
+        const current = this.getTransferCooldown();
+        const desired = Math.max(current, Math.floor(ticks));
+        this.setTransferCooldown(desired);
+    }
+
+    shouldDelayTransfers() {
+        const cooldown = this.getTransferCooldown();
+        if (cooldown <= 0) return false;
+        this.setTransferCooldown(cooldown - 1);
+        return true;
     }
 
     /**
@@ -738,6 +789,9 @@ export class Machine {
             } else if (entity.input_type === "complex" && entity.output_type === "complex") {
                 machineEvent = "utilitycraft:complex_machine";
                 inventorySize = 25
+            } else if (entity.input_type === "simple") {
+                machineEvent = "utilitycraft:simple_input_machine";
+                inventorySize = 6
             } else {
                 machineEvent = "utilitycraft:basic_machine";
             }
@@ -776,7 +830,7 @@ export class Machine {
     static onDestroy(e) {
         const { block, brokenBlockPermutation, player, dimension: dim } = e;
         const entity = dim.getEntitiesAtBlockLocation(block.location)[0];
-        if (!entity) return;
+        if (!entity) return false;
 
         const energy = new Energy(entity);
         const fluid = new FluidManager(entity)
@@ -800,15 +854,16 @@ export class Machine {
 
         // Drop item and cleanup
         system.run(() => {
-            if (player.getGameMode() == "survival") {
-                dim.getEntities({ type: 'item', maxDistance: 3, location: block.center() }).find(item => {
-                    item.getComponent('minecraft:item')?.itemStack?.typeId == blockItemId
-                }).remove()
+            if (player?.isInSurvival()) {
+                const oldItemEntity = dim.getEntities({ type: 'item', maxDistance: 3, location: block.center() })
+                    .find(item => item.getComponent('minecraft:item')?.itemStack?.typeId === blockItemId);
+                oldItemEntity?.remove()
             };
             Machine.dropAllItems(entity);
             entity.remove();
             dim.spawnItem(blockItem, block.center());
         });
+        return true
     }
 
     /**
@@ -819,15 +874,19 @@ export class Machine {
      * @param {Function} [callback] A function to execute after the entity is spawned (optional).
      */
     static spawnMachineEntity(e, settings, callback) {
-
         const { block, player, permutationToPlace } = e
+        const maindHand = player.getComponent('equippable').getEquipment('Mainhand')
+
         if (settings.rotation) {
+            if (player.isInSurvival()) system.run(() => {
+                player.runCommand(`clear @s ${permutationToPlace.type.id} 0 1`)
+            })
             e.cancel = true
             Rotation.facing(player, block, permutationToPlace)
 
         }
 
-        const itemInfo = player.getComponent('equippable').getEquipment('Mainhand').getLore();
+        const itemInfo = maindHand.getLore();
         let energy = 0;
         if (itemInfo[0] && itemInfo[0].includes('Energy')) {
             energy = Energy.getEnergyFromText(itemInfo[0]);
@@ -883,6 +942,7 @@ export class Machine {
      * @returns {boolean} True if the transfer was attempted, false otherwise.
      */
     transferItems(type = this.settings.entity.output_type ?? "simple") {
+        if (this.shouldDelayTransfers()) return false;
         const facing = this.block.getState("utilitycraft:axis");
         if (!facing) return false;
 
@@ -915,6 +975,65 @@ export class Machine {
         // Execute transfer using DoriosAPI
         DoriosAPI.containers.transferItemsAt(this.inv, targetLoc, this.dim, range);
         return true;
+    }
+
+    /**
+     * Pulls items from the vanilla container block above the machine
+     * into a specific slot in its internal inventory.
+     *
+     * - Only works if the block above is a vanilla container (checked via DoriosAPI.constants.vanillaContainers).
+     * - If the target slot is empty, moves the first available item.
+     * - If it already contains an item, merges stacks until full.
+     *
+     * @param {number} targetSlot The slot index where items should be inserted.
+     * @returns {boolean} True if at least one item was transferred.
+     */
+    pullItemsFromAbove(targetSlot) {
+        const inv = this.inv
+        const block = this.block
+
+        const aboveBlock = block.above(1);
+        if (!aboveBlock) return false;
+
+        // Solo contenedores vanilla
+        if (!DoriosAPI.constants.vanillaContainers.includes(aboveBlock.typeId)) return false;
+
+        const inputContainer = aboveBlock.getComponent("minecraft:inventory")?.container;
+        if (!inputContainer) return false;
+
+        const targetItem = inv.getItem(targetSlot);
+        let transferred = false;
+        for (let i = 0; i < inputContainer.size; i++) {
+            const inputItem = inputContainer.getItem(i);
+            if (!inputItem) continue;
+
+            // Si hay item distinto en el slot → saltar
+            if (targetItem && inputItem.typeId !== targetItem.typeId) continue;
+
+            // Si el slot está vacío → mover toda la pila al slot específico
+            if (!targetItem) {
+                inv.setItem(targetSlot, inputItem)
+                inputContainer.setItem(i,);
+                return true
+            }
+
+            const space = targetItem.maxAmount - targetItem.amount;
+            const amount = Math.min(space, inputItem.amount)
+
+            // Intentar combinar stacks
+            if (amount <= 0) continue;
+
+            targetItem.amount += amount;
+            inv.setItem(targetSlot, targetItem);
+            if (inputItem.amount - amount <= 0) {
+                inputContainer.setItem(i,);
+            } else {
+                inputItem.amount -= amount
+                inputContainer.setItem(i, inputItem);
+            }
+
+            return transferred;
+        }
     }
 
     /**
@@ -1993,28 +2112,55 @@ export class FluidManager {
     }
 
     /**
-     * Map of items that contain or provide fluids.
+     * Returns the current map of fluid container definitions.
      *
-     * Each key represents an item identifier, and its value
-     * defines the resulting fluid type, amount, and optional output item.
-     *
-     * Example:
-     * ```js
-     * FluidManager.itemFluidContainers["minecraft:lava_bucket"]
-     * // → { amount: 1000, type: "lava", output: "minecraft:bucket" }
-     * ```
-     *
-     * @constant
-     * @type {Record<string, { amount: number, type: string, output?: string }>}
+     * The registry is populated inside `config/fluids/containers.js`
+     * and can be extended either in code or via the
+     * `utilitycraft:register_fluid_container` ScriptEvent.
      */
-    static itemFluidContainers = {
-        'minecraft:lava_bucket': { amount: 1000, type: 'lava', output: 'minecraft:bucket' },
-        'utilitycraft:lava_ball': { amount: 1000, type: 'lava' },
-        'minecraft:water_bucket': { amount: 1000, type: 'water', output: 'minecraft:bucket' },
-        'utilitycraft:water_ball': { amount: 1000, type: 'water' },
-        'minecraft:experience_bottle': { amount: 8, type: 'xp', output: 'minecraft:glass_bottle' },
-        'minecraft:milk_bucket': { amount: 1000, type: 'milk', output: 'minecraft:bucket' },
-    };
+    static get itemFluidContainers() {
+        return getFluidContainerRegistry();
+    }
+
+    /**
+     * Registers or overrides a fluid container definition at runtime.
+     *
+     * @param {string} id Item identifier.
+     * @param {{ amount: number, type: string, output?: string }} definition Container data.
+     * @returns {boolean} True when the definition was stored.
+     */
+    static registerFluidContainer(id, definition) {
+        return registerFluidContainerDefinition(id, definition);
+    }
+
+    /**
+     * Returns the registry of fluid output containers (empty → filled mappings).
+     */
+    static get fluidOutputContainers() {
+        return getFluidOutputRegistry();
+    }
+
+    /**
+     * Retrieves output definition for an empty container identifier.
+     *
+     * @param {string} id Item identifier for the empty container.
+     * @returns {{ amount: number, fills: Record<string, string> } | null}
+     */
+    static getFluidFillDefinition(id) {
+        if (!id) return null;
+        return getFluidOutputDefinition(id);
+    }
+
+    /**
+     * Registers or overrides a fluid output definition at runtime.
+     *
+     * @param {string} id Item identifier.
+     * @param {{ amount: number, fills: Record<string, string> }} definition Data describing how the container is filled.
+     * @returns {boolean}
+     */
+    static registerFluidOutput(id, definition) {
+        return registerFluidOutputDefinition(id, definition);
+    }
 
 
     // --------------------------------------------------------------------------
@@ -2108,7 +2254,8 @@ export class FluidManager {
      * @returns {{ amount: number, type: string, output?: string }|null} Fluid data if found, otherwise null.
      */
     static getContainerData(id) {
-        return this.itemFluidContainers[id] ?? null;
+        if (!id) return null;
+        return getFluidContainerDefinition(id);
     }
 
     // --------------------------------------------------------------------------
@@ -2220,31 +2367,32 @@ export class FluidManager {
      */
     fluidItem(typeId) {
         // 1. Handle known container items (e.g., water bucket, lava bucket)
-        const insertData = FluidManager.itemFluidContainers[typeId];
+        const insertData = FluidManager.getContainerData(typeId);
         if (insertData) {
-            const { type, amount, output } = insertData;
+            const { type, output } = insertData;
+            const insertAmount = insertData.amountRange?.max ?? insertData.amount;
 
             // Ensure the tank can accept this fluid
-            const inserted = this.tryInsert(type, amount);
+            const inserted = this.tryInsert(type, insertAmount);
             if (!inserted) return false;
 
             return output; // Return resulting item (e.g., empty bucket)
         }
 
-        // 2. Handle empty bucket → attempt to fill with stored fluid
-        if (typeId === "minecraft:bucket") {
-            const validFillable = ["lava", "water", "milk"];
+        // 2. Handle empty containers that should be filled with the stored fluid
+        const fillDefinition = FluidManager.getFluidFillDefinition(typeId);
+        if (fillDefinition) {
             const storedType = this.getType();
+            if (!storedType || storedType === 'empty') return false;
 
-            // Only valid fluids can be bucketed
-            if (!validFillable.includes(storedType)) return false;
+            const filledItemId = fillDefinition.fills?.[storedType];
+            if (!filledItemId) return false;
+            const drainAmount = fillDefinition.amountRange?.max ?? fillDefinition.amount;
+            if (this.get() < drainAmount) return false;
 
-            // Require at least 1000 mB (1 bucket)
-            if (this.get() < 1000) return false;
-
-            // Drain and return filled bucket
-            this.add(-1000);
-            return `minecraft:${storedType}_bucket`;
+            this.add(-drainAmount);
+            if (this.get() <= 0) this.setType('empty');
+            return filledItemId;
         }
 
         // 3. Not a recognized container item
@@ -2705,3 +2853,128 @@ export class FluidManager {
         return caps[typeId] ?? 8000;
     }
 }
+
+
+/**
+ * ScriptEvent handler to destroy a machine at given coordinates.
+ * Removes the machine entity, drops stored items, and replaces the block with air.
+ */
+system.afterEvents.scriptEventReceive.subscribe(e => {
+    const { id, message, sourceEntity } = e
+
+    if (id === 'dorios:destroyMachine') {
+        try {
+            const [x, y, z] = message.split(',').map(Number)
+            const dim = sourceEntity.dimension
+            const block = dim.getBlock({ x, y, z })
+            if (!block) return
+
+            const fakeEvent = {
+                block,
+                brokenBlockPermutation: block.permutation,
+                player: null,
+                dimension: dim
+            }
+
+            const broken = Machine.onDestroy(fakeEvent)
+
+            // Remove block after destruction
+            system.runTimeout(() => {
+                if (broken) {
+                    dim.setBlockType(block.location, 'minecraft:air')
+                } else {
+                    dim.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} air destroy`)
+                }
+            }, 1)
+
+        } catch (err) {
+            console.warn(`[destroyMachine] Error: ${err}`)
+        }
+    }
+})
+
+/**
+ * ScriptEvent handler to destroy a generator at given coordinates.
+ * Removes the generator entity, drops stored items, and replaces the block with air.
+ */
+system.afterEvents.scriptEventReceive.subscribe(e => {
+    const { id, message, sourceEntity } = e
+
+    if (id === 'dorios:destroyGenerator') {
+        try {
+            const [x, y, z] = message.split(',').map(Number)
+            const dim = sourceEntity.dimension
+            const block = dim.getBlock({ x, y, z })
+            if (!block) return
+
+            const fakeEvent = {
+                block,
+                brokenBlockPermutation: block.permutation,
+                player: null,
+                dimension: dim
+            }
+
+            const broken = Generator.onDestroy(fakeEvent)
+
+            // Remove block after destruction
+            system.runTimeout(() => {
+                if (broken) {
+                    dim.setBlockType(block.location, 'minecraft:air')
+                } else {
+                    dim.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} air destroy`)
+                }
+            }, 1)
+
+        } catch (err) {
+            console.warn(`[destroyGenerator] Error: ${err}`)
+        }
+    }
+})
+
+/**
+ * ScriptEvent handler to destroy a fluid tank at given coordinates.
+ * Builds the tank item with fluid lore, removes the entity, sets the block to air, and drops the item.
+ */
+system.afterEvents.scriptEventReceive.subscribe(e => {
+    const { id, message, sourceEntity } = e
+
+    if (id === 'dorios:destroyTank') {
+        try {
+            const [x, y, z] = message.split(',').map(Number)
+            const dim = sourceEntity.dimension
+            const block = dim.getBlock({ x, y, z })
+            if (!block) return
+
+            const entity = dim.getEntitiesAtBlockLocation(block.location)
+                .find(e => e.typeId.includes("tank"));
+            if (!entity) {
+                dim.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} air destroy`)
+                return
+            };
+
+
+            const fluid = new FluidManager(entity)
+            const blockItemId = block.typeId
+            const blockItem = new ItemStack(blockItemId)
+            const lore = []
+
+            // Fluid lore
+            if (fluid.type !== 'empty' && fluid.get() > 0) {
+                const liquidName = DoriosAPI.utils.capitalizeFirst(fluid.type)
+                lore.push(`§r§7  ${liquidName}: ${FluidManager.formatFluid(fluid.get())}/${FluidManager.formatFluid(fluid.cap)}`)
+            }
+            if (lore.length > 0) blockItem.setLore(lore)
+
+            const dropPos = block.center()
+
+            // Remove entity, clear block, then drop the item
+            system.run(() => {
+                entity.remove()
+                dim.setBlockType(block.location, 'minecraft:air')
+                dim.spawnItem(blockItem, dropPos)
+            })
+        } catch (err) {
+            console.warn(`[destroyTank] Error: ${err}`)
+        }
+    }
+})
