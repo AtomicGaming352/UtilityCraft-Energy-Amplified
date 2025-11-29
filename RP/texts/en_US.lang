@@ -21,6 +21,9 @@ tile.utilitycraft:advanced_biowaste_generator.name=Advanced Biowaste Generator
 tile.utilitycraft:expert_biowaste_generator.name=Expert Biowaste Generator
 tile.utilitycraft:ultimate_biowaste_generator.name=Ultimate Biowaste Generator
 
+## Machines
+tile.utilitycraft:bio_macerator.name=Biomacerator\n§7- Accepted upgrades:\n   §a §7 §b §7
+
 ## Entities - Entities
 entity.utilitycraft:bio_macerator.name=Biomacerator
 entity.utilitycraft:biogenerator.name=Bio Generator
