@@ -66,7 +66,15 @@
 				"minecraft:potato": {
 					"output": "utilitycraft:compost",
 					"amount": 1,
-					"required": 5 }
+					"required": 5 },
+				"utilitycraft:compost": {
+					"output": "utilitycraft:biomass",
+					"amount": 1,
+					"required": 2 },
+				"minecraft:poisonous_potato": {
+					"output": "utilitycraft:compost",
+					"amount": 2,
+					"required": 6 },
 			},
 			"minecraft:geometry": "geometry.utilitycraft_block_2",
 			"minecraft:material_instances": {
