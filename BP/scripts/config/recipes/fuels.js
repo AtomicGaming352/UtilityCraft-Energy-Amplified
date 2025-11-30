@@ -71,10 +71,10 @@ export const bioFuels = [
   { id: 'biomass', de: 32000 },
   { id: 'biomass_block', de: 320000 },
   { id: 'compost', de: 8000 },
-  { id: 'poop', de: 3200 },
+  { id: 'biowaste', de: 3200 },
 ]
 
 export const poopFuels = [
-  { id: 'poop', de: 8000 },
+  { id: 'biowaste', de: 8000 },
   { id: 'compost', de: 24000 },
 ]
