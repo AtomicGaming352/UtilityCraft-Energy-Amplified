@@ -1,0 +1,42 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "utilitycraft:bio_macerator"
+        },
+        "tags": [
+            "utilitycraft_workbench"
+        ],
+        "pattern": [
+            "DPD",
+            "BFB",
+            "DRD"
+        ],
+        "key": {
+            "D": {
+                "item": "minecraft:redstone_dust"
+            },
+            "F": {
+                "item": "utilitycraft:crusher"
+            },
+            "B": {
+                "item": "utilitycraft:basic_chip"
+            },
+            "P": {
+                "item": "utilitycraft:biomass"
+            },
+            "R": {
+                "item": "minecraft:redstone_block"
+            }
+        },
+        "result": {
+            "item": "utilitycraft:bio_macerator",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:biomass"
+            }
+        ]
+    }
+}
