@@ -51,7 +51,35 @@
 					"output": "utilitycraft:biowaste",
 					"amount": 1,
 					"required": 2 },
+				"minecraft:seagrass": {
+					"output": "utilitycraft:biowaste",
+					"amount": 1,
+					"required": 4 },
+				"minecraft:kelp": {
+					"output": "utilitycraft:biowaste",
+					"amount": 1,
+					"required": 2 },
+				"minecraft:moss_carpet": {
+					"output": "utilitycraft:biowaste",
+					"amount": 1,
+					"required": 2 },
+				"minecraft:beetroot_seeds": {
+					"output": "utilitycraft:biowaste",
+					"amount": 1,
+					"required": 2 },
+				"minecraft:wheat_seeds": {
+					"output": "utilitycraft:biowaste",
+					"amount": 1,
+					"required": 2 },
 				"minecraft:moss_block": {
+					"output": "utilitycraft:biomass",
+					"amount": 1,
+					"required": 12 },
+				"minecraft:hay_block": {
+					"output": "utilitycraft:biomass",
+					"amount": 1,
+					"required": 2 },
+				"minecraft:shroomlight": {
 					"output": "utilitycraft:biomass",
 					"amount": 1,
 					"required": 12 },
@@ -67,6 +95,18 @@
 					"output": "utilitycraft:compost",
 					"amount": 1,
 					"required": 5 },
+				"minecraft:beetroot": {
+					"output": "utilitycraft:compost",
+					"amount": 1,
+					"required": 6, },
+				"minecraft:sweet_berries": {
+					"output": "utilitycraft:compost",
+					"amount": 1,
+					"required": 5, },
+				"minecraft:melon_slices": {
+					"output": "utilitycraft:compost",
+					"amount": 1,
+					"required": 7, },
 				"utilitycraft:compost": {
 					"output": "utilitycraft:biomass",
 					"amount": 1,
@@ -74,7 +114,7 @@
 				"minecraft:poisonous_potato": {
 					"output": "utilitycraft:compost",
 					"amount": 2,
-					"required": 6 },
+					"required": 6 }
 			},
 			"minecraft:geometry": "geometry.utilitycraft_block_2",
 			"minecraft:material_instances": {
