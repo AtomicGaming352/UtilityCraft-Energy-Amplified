@@ -98,15 +98,15 @@
 				"minecraft:beetroot": {
 					"output": "utilitycraft:compost",
 					"amount": 1,
-					"required": 6, },
+					"required": 6 },
 				"minecraft:sweet_berries": {
 					"output": "utilitycraft:compost",
 					"amount": 1,
-					"required": 5, },
+					"required": 5 },
 				"minecraft:melon_slices": {
 					"output": "utilitycraft:compost",
 					"amount": 1,
-					"required": 7, },
+					"required": 7 },
 				"utilitycraft:compost": {
 					"output": "utilitycraft:biomass",
 					"amount": 1,
@@ -441,3 +441,4 @@
 		]
 	}
               }
+
