@@ -49,6 +49,54 @@
 		"utilitycraft_ultimate_bio_generator_on": {
 			"textures": "textures/blocks/generators/biogens/ultimate_bio_generator_on"
 		},
+		"utilitycraft_basic_modern_solar_panel_off": {
+			"textures": "textures/blocks/generators/modern_panels/basic_modern_solar_panel_off"
+		},
+		"utilitycraft_basic_modern_solar_panel_on": {
+			"textures": "textures/blocks/generators/modern_panels/basic_modern_solar_panel_on"
+		},
+		"utilitycraft_advanced_modern_solar_panel_off": {
+			"textures": "textures/blocks/generators/modern_panels/advanced_modern_solar_panel_off"
+		},
+		"utilitycraft_advanced_modern_solar_panel_on": {
+			"textures": "textures/blocks/generators/modern_panels/advanced_modern_solar_panel_on"
+		},
+		"utilitycraft_expert_modern_solar_panel_off": {
+			"textures": "textures/blocks/generators/modern_panels/expert_modern_solar_panel_off"
+		},
+		"utilitycraft_expert_modern_solar_panel_on": {
+			"textures": "textures/blocks/generators/modern_panels/expert_modern_solar_panel_on"
+		},
+		"utilitycraft_ultimate_modern_solar_panel_off": {
+			"textures": "textures/blocks/generators/modern_panels/ultimate_modern_solar_panel_off"
+		},
+		"utilitycraft_ultimate_modern_solar_panel_on": {
+			"textures": "textures/blocks/generators/modern_panels/ultimate_modern_solar_panel_on"
+		},
+		"utilitycraft_basic_lunar_panel_off": {
+			"textures": "textures/blocks/generators/lunar_panels/basic_lunar_panel_off"
+		},
+		"utilitycraft_basic_lunar_panel_on": {
+			"textures": "textures/blocks/generators/lunar_panels/basic_lunar_panel_on"
+		},
+		"utilitycraft_advanced_lunar_panel_off": {
+			"textures": "textures/blocks/generators/lunar_panels/advanced_lunar_panel_off"
+		},
+		"utilitycraft_advanced_lunar_panel_on": {
+			"textures": "textures/blocks/generators/lunar_panels/advanced_lunar_panel_on"
+		},
+		"utilitycraft_expert_lunar_panel_off": {
+			"textures": "textures/blocks/generators/lunar_panels/expert_lunar_panel_off"
+		},
+		"utilitycraft_expert_lunar_panel_on": {
+			"textures": "textures/blocks/generators/lunar_panels/expert_lunar_panel_on"
+		},
+		"utilitycraft_ultimate_lunar_panel_off": {
+			"textures": "textures/blocks/generators/lunar_panels/ultimate_lunar_panel_off"
+		},
+		"utilitycraft_ultimate_lunar_panel_on": {
+			"textures": "textures/blocks/generators/lunar_panels/ultimate_lunar_panel_on"
+		},
 		"utilitycraft_biomacerator_off": {
 			"textures": "textures/blocks/machines/biomacerator_off"
 		},
