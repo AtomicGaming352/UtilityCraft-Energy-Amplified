@@ -2,10 +2,28 @@
 	"texture_name": "atlas.terrain",
 	"texture_data": {
 		"utilitycraft_basic_poop_generator_on": {
-			"textures": "textures/blocks/generators/basic_biowaste_generator_on"
+			"textures": "textures/blocks/generators/biowastegens/basic_biowaste_generator_on"
 		},
 		"utilitycraft_basic_poop_generator_off": {
-			"textures": "textures/blocks/generators/basic_biowaste_generator_off"
+			"textures": "textures/blocks/generators/biowastegens/basic_biowaste_generator_off"
+		},
+		"utilitycraft_advanced_poop_generator_on": {
+			"textures": "textures/blocks/generators/biowastegens/advanced_biowaste_generator_on"
+		},
+		"utilitycraft_advanced_poop_generator_off": {
+			"textures": "textures/blocks/generators/biowastegens/advanced_biowaste_generator_off"
+		},
+		"utilitycraft_expert_poop_generator_on": {
+			"textures": "textures/blocks/generators/biowastegens/expert_biowaste_generator_on"
+		},
+		"utilitycraft_expert_poop_generator_off": {
+			"textures": "textures/blocks/generators/biowastegens/expert_biowaste_generator_off"
+		},
+		"utilitycraft_ultimate_poop_generator_on": {
+			"textures": "textures/blocks/generators/biowastegens/ultimate_biowaste_generator_on"
+		},
+		"utilitycraft_ultimate_poop_generator_off": {
+			"textures": "textures/blocks/generators/biowastegens/ultimate_biowaste_generator_off"
 		},
 		"utilitycraft_basic_bio_generator_off": {
 			"textures": "textures/blocks/generators/biogens/basic_bio_generator_off"
@@ -32,10 +50,10 @@
 			"textures": "textures/blocks/generators/biogens/ultimate_bio_generator_on"
 		},
 		"utilitycraft_biomacerator_off": {
-			"textures": "textures/blocks/generators/biomacerator_off"
+			"textures": "textures/blocks/machines/biomacerator_off"
 		},
 		"utilitycraft_biomacerator_on": {
-			"textures": "textures/blocks/generators/biomacerator_on"
+			"textures": "textures/blocks/machines/biomacerator_on"
 		}
 	}
 }
