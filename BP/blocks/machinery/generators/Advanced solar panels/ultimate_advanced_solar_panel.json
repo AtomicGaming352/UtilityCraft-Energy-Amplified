@@ -24,10 +24,10 @@
 					"rate_speed_base": 6000
 				}
 			},
-			"minecraft:geometry": "geometry.utilitycraft_solar_panel",
+			"minecraft:geometry": "geometry.utilitycraft_modern_solar_panel",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "utilitycraft_ultimate_solar_panel_off",
+					"texture": "utilitycraft_ultimate_modern_solar_panel_off",
 					"render_method": "alpha_test"
 				}
 			},
@@ -74,7 +74,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "utilitycraft_ultimate_solar_panel_on",
+							"texture": "utilitycraft_ultimate_modern_solar_panel_on",
 							"render_method": "alpha_test"
 						}
 					},
