@@ -1,29 +1,31 @@
 {
+	"num_mip_levels": 4,
+	"resource_pack_name": "UC: Energy Amplified",
 	"texture_name": "atlas.terrain",
 	"texture_data": {
 		"utilitycraft_basic_poop_generator_on": {
-			"textures": "textures/blocks/generators/biowastegens/basic_biowaste_generator_on"
+			"textures": "textures/blocks/generators/biowastegens/basic_bio_waster_on"
 		},
 		"utilitycraft_basic_poop_generator_off": {
-			"textures": "textures/blocks/generators/biowastegens/basic_biowaste_generator_off"
+			"textures": "textures/blocks/generators/biowastegens/basic_bio_waster_off"
 		},
 		"utilitycraft_advanced_poop_generator_on": {
-			"textures": "textures/blocks/generators/biowastegens/advanced_biowaste_generator_on"
+			"textures": "textures/blocks/generators/biowastegens/advanced_bio_waster_on"
 		},
 		"utilitycraft_advanced_poop_generator_off": {
-			"textures": "textures/blocks/generators/biowastegens/advanced_biowaste_generator_off"
+			"textures": "textures/blocks/generators/biowastegens/advanced_bio_waster_off"
 		},
 		"utilitycraft_expert_poop_generator_on": {
-			"textures": "textures/blocks/generators/biowastegens/expert_biowaste_generator_on"
+			"textures": "textures/blocks/generators/biowastegens/expert_bio_waster_on"
 		},
 		"utilitycraft_expert_poop_generator_off": {
 			"textures": "textures/blocks/generators/biowastegens/expert_biowaste_generator_off"
 		},
 		"utilitycraft_ultimate_poop_generator_on": {
-			"textures": "textures/blocks/generators/biowastegens/ultimate_biowaste_generator_on"
+			"textures": "textures/blocks/generators/biowastegens/ultimate_bio_waster_on"
 		},
 		"utilitycraft_ultimate_poop_generator_off": {
-			"textures": "textures/blocks/generators/biowastegens/ultimate_biowaste_generator_off"
+			"textures": "textures/blocks/generators/biowastegens/ultimate_bio_waster_off"
 		},
 		"utilitycraft_basic_bio_generator_off": {
 			"textures": "textures/blocks/generators/biogens/basic_bio_generator_off"
@@ -98,10 +100,10 @@
 			"textures": "textures/blocks/generators/lunar_panels/ultimate_lunar_panel_on"
 		},
 		"utilitycraft_biomacerator_off": {
-			"textures": "textures/blocks/machines/biomacerator_off"
+			"textures": "textures/blocks/machines/bio_macerator_off"
 		},
 		"utilitycraft_biomacerator_on": {
-			"textures": "textures/blocks/machines/biomacerator_on"
+			"textures": "textures/blocks/machines/bio_macerator_on"
 		}
 	}
 }
