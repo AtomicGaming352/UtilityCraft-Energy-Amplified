@@ -14,7 +14,7 @@
         ],
         "key": {
             "D": {
-                "item": "minecraft:redstone_dust"
+                "item": "minecraft:redstone"
             },
             "F": {
                 "item": "utilitycraft:crusher"
