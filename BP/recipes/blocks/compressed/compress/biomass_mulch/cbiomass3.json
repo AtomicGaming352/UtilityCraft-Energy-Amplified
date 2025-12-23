@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "utilitycraft:cbiomass_block3"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "utilitycraft:compressed_biomass_block2",
+        "count": 9
+      }
+    ],
+    "result": {
+      "item": "utilitycraft:compressed_biomass_block3"
+    },
+    "unlock": [
+      {
+        "item": "utilitycraft:compressed_biomass_block2"
+      }
+    ]
+  }
+}
