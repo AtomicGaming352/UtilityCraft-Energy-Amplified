@@ -3,11 +3,18 @@ item.utilitycraft:biomass=Biomass
 item.utilitycraft:compost=Compost
 item.utilitycraft:biowaste=Biowaste
 
+## Biomass - blocks and compressed biomass stuff
+tile.utilitycraft:biomass_block.name=Biomass Mulch
+tile.utilitycraft:compressed_biomass_block.name=Compressed Biomass Mulch
+tile.utilitycraft:compressed_biomass_block2.name=Double Compressed Biomass Mulch
+tile.utilitycraft:compressed_biomass_block3.name=Triple Compressed Biomass Mulch
+tile.utilitycraft:compressed_biomass_block4.name=Quadruple Compressed Biomass Mulch
+
 ## Advanced Solar Panels - Advanced Solar Panels (Tier 2)
-tile.utilitycraft:basic_advanced_solar_panel.name=Basic T2 Solar Panel
-tile.utilitycraft:advanced_advanced_solar_panel.name=Advanced T2 Solar Panel
-tile.utilitycraft:expert_advanced_solar_panel.name=Expert T2 Solar Panel
-tile.utilitycraft:ultimate_advanced_solar_panel.name=Ultimate T2 Solar Panel
+tile.utilitycraft:basic_advanced_solar_panel.name=Basic Modern Solar Panel
+tile.utilitycraft:advanced_advanced_solar_panel.name=Advanced Modern Solar Panel
+tile.utilitycraft:expert_advanced_solar_panel.name=Expert Modern Solar Panel
+tile.utilitycraft:ultimate_advanced_solar_panel.name=Ultimate Modern Solar Panel
 
 ## Bio Generators - Bio Generators
 tile.utilitycraft:basic_bio_generator.name=Basic Bio Generator
