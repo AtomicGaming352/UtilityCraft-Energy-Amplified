@@ -1,0 +1,49 @@
+{
+
+  "format_version": "1.20.80",
+
+  "minecraft:recipe_shapeless": {
+
+    "description": {
+
+      "identifier": "utilitycraft:biomass_block"
+
+    },
+
+    "tags": [
+
+      "crafting_table"
+
+    ],
+
+    "ingredients": [
+
+      {
+
+        "item": "utilitycraft:biomass",
+
+        "count": 9
+
+      }
+
+    ],
+
+    "result": {
+
+      "item": "utilitycraft:biomass_block"
+
+    },
+
+    "unlock": [
+
+      {
+
+        "item": "minecraft:biomass"
+
+      }
+
+    ]
+
+  }
+
+}
