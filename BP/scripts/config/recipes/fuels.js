@@ -72,6 +72,12 @@ export const bioFuels = [
   { id: 'biomass_block', de: 320000 },
   { id: 'compost', de: 8000 },
   { id: 'biowaste', de: 3200 },
+
+  // Compressy shit
+  { id: 'compressed_biomass_block', de: 3200000 },
+  { id: 'compressed_biomass_block_2', de: 32000000 },
+  { id: 'compressed_biomass_block_3', de: 320000000 },
+  { id: 'compressed_biomass_block_4', de: 3200000000 },
 ]
 
 export const poopFuels = [
