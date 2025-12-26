@@ -14,6 +14,7 @@ export const bioFuels = [
   // 🍃 Plant material & crops (medium energy)
   { id: 'wheat', de: 1600 },
   { id: 'carrot', de: 1600 },
+  { id: 'golden_carrot', de: 1600 },
   { id: 'potato', de: 1200 },
   { id: 'beetroot', de: 1000 },
   { id: 'sweet_berries', de: 1100 },
