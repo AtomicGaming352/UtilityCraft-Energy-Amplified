@@ -66,18 +66,18 @@ export const bioFuels = [
   { id: 'mangrove_propagule', de: 1500 },
   { id: 'small_dripleaf', de: 1600 },
   { id: 'big_dripleaf', de: 1800 },
-  
-  // Bio mass fuels
-  { id: 'biomass', de: 32000 },
-  { id: 'biomass_block', de: 320000 },
-  { id: 'compost', de: 8000 },
-  { id: 'biowaste', de: 3200 },
 
   // Compressy shit
   { id: 'compressed_biomass_block', de: 3200000 },
   { id: 'compressed_biomass_block2', de: 32000000 },
   { id: 'compressed_biomass_block3', de: 320000000 },
-  { id: 'compressed_biomass_block4', de: 3200000000 },
+  { id: 'compressed_biomass_block4', de: 3200000000 },  
+
+  // Bio mass fuels
+  { id: 'biomass_block', de: 320000 },
+  { id: 'biomass', de: 32000 },
+  { id: 'compost', de: 8000 },
+  { id: 'biowaste', de: 3200 },
 ]
 
 export const poopFuels = [
@@ -151,9 +151,15 @@ export const radicalbioFuels = [
   { id: 'small_dripleaf', de: 3200 },
   { id: 'big_dripleaf', de: 3600 },
 
+    // Compressy shit
+  { id: 'compressed_biomass_block', de: 6400000 },
+  { id: 'compressed_biomass_block2', de: 64000000 },
+  { id: 'compressed_biomass_block3', de: 640000000 },
+  { id: 'compressed_biomass_block4', de: 6400000000 },
+  
   // Bio fuels
-  { id: 'biomass', de: 64000 },
   { id: 'biomass_block', de: 640000 },
+  { id: 'biomass', de: 64000 },
   { id: 'compost', de: 16000 },
   { id: 'biowaste', de: 6400 }
 ]
