@@ -36,9 +36,11 @@ export const bioFuels = [
   // 🍄 Fungal & Nether organic (high energy)
   { id: 'crimson_fungus', de: 2000 },
   { id: 'warped_fungus', de: 2000 },
+  { id: 'nether_wart_block', de: 3600 },
+  { id: 'warped_wart_block', de: 3600 },
   { id: 'crimson_roots', de: 1600 },
-  { id: 'minecraft:warped_roots', de: 1600 },
-  { id: 'nether_wart', de: 2200 },
+  { id: 'warped_roots', de: 1600 },
+  { id: 'nether_wart', de: 360 },
   { id: 'weeping_vines', de: 1900 },
   { id: 'twisting_vines', de: 1900 },
   { id: 'shroomlight', de: 2400 },
@@ -69,10 +71,10 @@ export const bioFuels = [
   { id: 'big_dripleaf', de: 1800 },
 
   // Compressy shit
-  { id: 'compressed_biomass_block', de: 3200000 },
-  { id: 'compressed_biomass_block2', de: 32000000 },
+  { id: 'compressed_biomass_block4', de: 3200000000 },
   { id: 'compressed_biomass_block3', de: 320000000 },
-  { id: 'compressed_biomass_block4', de: 3200000000 },  
+  { id: 'compressed_biomass_block2', de: 32000000 },
+  { id: 'compressed_biomass_block', de: 3200000 },
 
   // Bio mass fuels
   { id: 'biomass_block', de: 320000 },
@@ -152,11 +154,11 @@ export const radicalbioFuels = [
   { id: 'small_dripleaf', de: 3200 },
   { id: 'big_dripleaf', de: 3600 },
 
-    // Compressy shit
-  { id: 'compressed_biomass_block', de: 6400000 },
-  { id: 'compressed_biomass_block2', de: 64000000 },
-  { id: 'compressed_biomass_block3', de: 640000000 },
-  { id: 'compressed_biomass_block4', de: 6400000000 },
+  // Compressy shit
+  { id: 'compressed_biomass_block4', de: 3200000000 },
+  { id: 'compressed_biomass_block3', de: 320000000 },
+  { id: 'compressed_biomass_block2', de: 32000000 },
+  { id: 'compressed_biomass_block', de: 3200000 },
   
   // Bio fuels
   { id: 'biomass_block', de: 640000 },
