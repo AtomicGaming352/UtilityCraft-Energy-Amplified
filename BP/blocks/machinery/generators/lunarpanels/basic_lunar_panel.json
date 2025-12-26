@@ -22,7 +22,7 @@
         },
         "generator": {
           "energy_cap": 64000,
-          "rate_speed_base": 8
+          "rate_speed_base": 12
         }
       },
       "minecraft:geometry": "geometry.utilitycraft_solar_panel",
