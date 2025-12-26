@@ -104,6 +104,21 @@
 		},
 		"utilitycraft_biomacerator_on": {
 			"textures": "textures/blocks/machines/bio_macerator_on"
+		},
+		"utilitycraft_compressed_biomass_block_x1": {
+			"textures": "textures/blocks/compressed/biomass/compressed_biomass_x1"
+		},
+		"utilitycraft_compressed_biomass_block_x2": {
+			"textures": "textures/blocks/compressed/biomass/compressed_biomass_x2"
+		},
+		"utilitycraft_compressed_biomass_block_x3": {
+			"textures": "textures/blocks/compressed/biomass/compressed_biomass_x3"
+		},
+		"utilitycraft_compressed_biomass_block_x4": {
+			"textures": "textures/blocks/compressed/biomass/compressed_biomass_x4"
+		},
+		"utilitycraft_biomass_block": {
+			"textures": "textures/blocks/compressed/biomass/biomass_block"
 		}
 	}
 }
