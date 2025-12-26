@@ -11,29 +11,31 @@ tile.utilitycraft:compressed_biomass_block3.name=Triple Compressed Biomass Mulch
 tile.utilitycraft:compressed_biomass_block4.name=Quadruple Compressed Biomass Mulch
 
 ## Advanced Solar Panels - Advanced Solar Panels (Tier 2)
-tile.utilitycraft:basic_advanced_solar_panel.name=Basic Modern Solar Panel
-tile.utilitycraft:advanced_advanced_solar_panel.name=Advanced Modern Solar Panel
-tile.utilitycraft:expert_advanced_solar_panel.name=Expert Modern Solar Panel
-tile.utilitycraft:ultimate_advanced_solar_panel.name=Ultimate Modern Solar Panel
+tile.utilitycraft:basic_advanced_solar_panel.name=§eBasic Modern Solar Panel [§cT2§r] \n §7 Rate: 60 DE/t
+tile.utilitycraft:advanced_advanced_solar_panel.name=§cAdvanced Modern Solar Panel [§cT2§r] \n §7 Rate: 240 DE/t
+tile.utilitycraft:expert_advanced_solar_panel.name=§bExpert Modern Solar Panel [§cT2§r] \n §7 Rate: 960 DE/t
+tile.utilitycraft:ultimate_advanced_solar_panel.name=§8Ultimate Modern Solar Panel [§cT2§r] \n §7 Rate: 6 kDE/t
 
 ## Solunar Panels - Lunar Panels 
-tile.utilitycraft:basic_lunar_panel.name=Basic Lunar Panel
-tile.utilitycraft:advanced_lunar_panel.name=Advanced Lunar Panel
-tile.utilitycraft:expert_lunar_panel.name=Expert Lunar Panel
-tile.utilitycraft:ultimate_lunar_panel.name=Ultimate Lunar Panel
+tile.utilitycraft:basic_lunar_panel.name=§eBasic Lunar Panel \n §7 Rate: 12 DE/t
+tile.utilitycraft:advanced_lunar_panel.name=§cAdvanced Lunar Panel \n §7 Rate: 48 DE/t
+tile.utilitycraft:expert_lunar_panel.name=§bExpert Lunar Panel \n §7 Rate: 192 DE/t
+tile.utilitycraft:ultimate_lunar_panel.name=§8Ultimate Lunar Panel \n §7 Rate: 1200 DE/t
 
 ## Bio Generators - Bio Generators
-tile.utilitycraft:basic_bio_generator.name=Basic Bio Generator
-tile.utilitycraft:advanced_bio_generator.name=Advanced Bio Generator
-tile.utilitycraft:expert_bio_generator.name=Expert Bio Generator
-tile.utilitycraft:ultimate_bio_generator.name=Ultimate Bio Generator
+tile.utilitycraft:basic_bio_generator.name=§eeBasic Bio Generator \n §7 Rate: 35 DE/t
+tile.utilitycraft:advanced_bio_generator.name=§cAdvanced Bio Generator \n §7 Rate: 140 DE/t
+tile.utilitycraft:expert_bio_generator.name=§bExpert Bio Generator \n §7 Rate: 560 DE/t
+tile.utilitycraft:ultimate_bio_generator.name=§8Ultimate Bio Generator \n §7 Rate: 4 kDE/t
 
 ## Bio Waste Generators - Biowaste Generators
-tile.utilitycraft:basic_biowaste_generator.name=Basic Biowaste Generator
-tile.utilitycraft:advanced_biowaste_generator.name=Advanced Biowaste Generator
-tile.utilitycraft:expert_biowaste_generator.name=Expert Biowaste Generator
-tile.utilitycraft:ultimate_biowaste_generator.name=Ultimate Biowaste Generator
+tile.utilitycraft:basic_biowaste_generator.name=§eBasic Biowaste Generator \n §7 Rate: 20 DE/t
+tile.utilitycraft:advanced_biowaste_generator.name=§cAdvanced Biowaste Generator \n §7 Rate: 120 DE/t
+tile.utilitycraft:expert_biowaste_generator.name=§bExpert Biowaste Generator \n §7 Rate: 480 DE/t
+tile.utilitycraft:ultimate_biowaste_generator.name=§8Ultimate Biowaste Generator \n §7 Rate: 3.2 kDE/t
 
+## Machines - Machines
+tile.utilitycraft:bio_macerator.name=Biomacerator\n§7- Accepted upgrades:\n   §a§7 §b§7
 
 ## Entities - Entities
 entity.utilitycraft:bio_macerator.name=Biomacerator
