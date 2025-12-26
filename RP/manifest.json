@@ -15,7 +15,7 @@
 			21,
 			120
 		],
-		"uuid": "48555980-6c0f-4321-8bb9-b835617df671",
+		"uuid": "17b56766-fe23-4bac-842a-763a4e23eb5c",
 		"version": [
 			1,
 			0,
@@ -35,7 +35,7 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "19825b18-e44e-4e17-ac83-5c25cdc0ad59",
+			"uuid": "cfc611a3-1ad4-4b72-81b7-75d502857d15",
 			"version": [
 				1,
 				0,
