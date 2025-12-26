@@ -24,7 +24,7 @@
 
         "*": {
 
-          "texture": "utilitycraft_biomass_block",
+          "texture": "utilitycraft_compressed_biomass_block_x3",
 
           "render_method": "alpha_test"
 
