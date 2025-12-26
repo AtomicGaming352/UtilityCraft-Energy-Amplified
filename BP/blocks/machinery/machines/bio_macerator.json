@@ -79,10 +79,26 @@
 					"output": "utilitycraft:biomass",
 					"amount": 1,
 					"required": 2 },
+				"minecraft:melon_block": {
+					"output": "utilitycraft:biomass",
+					"amount": 1,
+					"required": 16 },
 				"minecraft:shroomlight": {
 					"output": "utilitycraft:biomass",
 					"amount": 1,
 					"required": 12 },
+				"minecraft:dried_kelp_block": {
+					"output": "utilitycraft:biomass",
+					"amount": 1,
+					"required": 5 },
+				"minecraft:warped_wart_block": {
+					"output": "utilitycraft:biomass",
+					"amount": 1,
+					"required": 7 },
+				"minecraft:nether_wart_block": {
+					"output": "utilitycraft:biomass",
+					"amount": 1,
+					"required": 7 },
 				"minecraft:wheat": {
 					"output": "utilitycraft:compost",
 					"amount": 1,
@@ -441,4 +457,5 @@
 		]
 	}
               }
+
 
