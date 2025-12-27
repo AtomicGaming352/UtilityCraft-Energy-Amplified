@@ -13,7 +13,7 @@
             "PRP"
         ],
         "key": {
-            "S": {
+            "D": {
                 "item": "utilitycraft:diamond_dust"
             },
             "A": {
