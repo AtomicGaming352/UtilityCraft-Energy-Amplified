@@ -10,7 +10,7 @@
         "pattern": [
             "DPD",
             "BFB",
-            "DRD"
+            "DGD"
         ],
         "key": {
             "D": {
@@ -25,8 +25,8 @@
             "P": {
                 "item": "utilitycraft:biomass"
             },
-            "R": {
-                "item": "minecraft:redstone_block"
+            "G": {
+                "item": "minecraft:gold_ingot"
             }
         },
         "result": {
