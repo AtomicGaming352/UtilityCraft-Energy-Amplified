@@ -1,0 +1,45 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:biowaste5"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:rotten_flesh",
+                "count": 4
+            },
+            {
+                "item": "minecraft:coarse_dirt",
+                "count": 1
+            },
+            {
+                "item": "minecraft:sugar",
+                "count": 1
+            },
+            {
+                "item": "minecraft:leaf_litter",
+                "count": 1
+            },
+            {
+                "item": "minecraft:bone_meal",
+                "count": 2
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:biowaste",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "minecraft:rotten_flesh"
+            },
+            {
+                "item": "minecraft:bone"
+            }
+        ]
+    }
+}
