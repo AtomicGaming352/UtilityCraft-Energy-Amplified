@@ -26,7 +26,7 @@
                 "item": "utilitycraft:biowaste"
             },
             "G": {
-                "item": "utilitycraft:energized_iron_block"
+                "item": "minecraft:redstone_block"
             }
         },
         "result": {
