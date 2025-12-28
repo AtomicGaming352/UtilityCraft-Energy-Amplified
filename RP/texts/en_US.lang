@@ -11,10 +11,10 @@ tile.utilitycraft:compressed_biomass_block3.name=Triple Compressed Biomass Mulch
 tile.utilitycraft:compressed_biomass_block4.name=Quadruple Compressed Biomass Mulch
 
 ## Advanced Solar Panels - Advanced Solar Panels (Tier 2)
-tile.utilitycraft:basic_advanced_solar_panel.name=§eBasic Modern Solar Panel [§cT2§r] \n §7 Rate: 60 DE/t
-tile.utilitycraft:advanced_advanced_solar_panel.name=§cAdvanced Modern Solar Panel [§cT2§r] \n §7 Rate: 240 DE/t
-tile.utilitycraft:expert_advanced_solar_panel.name=§bExpert Modern Solar Panel [§cT2§r] \n §7 Rate: 960 DE/t
-tile.utilitycraft:ultimate_advanced_solar_panel.name=§8Ultimate Modern Solar Panel [§cT2§r] \n §7 Rate: 6 kDE/t
+tile.utilitycraft:basic_advanced_solar_panel.name=§eBasic Modern Solar Panel §r[§cT2§r] \n §7 Rate: 60 DE/t
+tile.utilitycraft:advanced_advanced_solar_panel.name=§cAdvanced Modern Solar Panel §r[§cT2§r] \n §7 Rate: 240 DE/t
+tile.utilitycraft:expert_advanced_solar_panel.name=§bExpert Modern Solar Panel §r[§cT2§r] \n §7 Rate: 960 DE/t
+tile.utilitycraft:ultimate_advanced_solar_panel.name=§8Ultimate Modern Solar Panel §r[§cT2§r] \n §7 Rate: 6 kDE/t
 
 ## Solunar Panels - Lunar Panels 
 tile.utilitycraft:basic_lunar_panel.name=§eBasic Lunar Panel \n §7 Rate: 12 DE/t
@@ -23,7 +23,7 @@ tile.utilitycraft:expert_lunar_panel.name=§bExpert Lunar Panel \n §7 Rate: 192
 tile.utilitycraft:ultimate_lunar_panel.name=§8Ultimate Lunar Panel \n §7 Rate: 1200 DE/t
 
 ## Bio Generators - Bio Generators
-tile.utilitycraft:basic_bio_generator.name=§eeBasic Bio Generator \n §7 Rate: 35 DE/t
+tile.utilitycraft:basic_bio_generator.name=§eBasic Bio Generator \n §7 Rate: 35 DE/t
 tile.utilitycraft:advanced_bio_generator.name=§cAdvanced Bio Generator \n §7 Rate: 140 DE/t
 tile.utilitycraft:expert_bio_generator.name=§bExpert Bio Generator \n §7 Rate: 560 DE/t
 tile.utilitycraft:ultimate_bio_generator.name=§8Ultimate Bio Generator \n §7 Rate: 4 kDE/t
