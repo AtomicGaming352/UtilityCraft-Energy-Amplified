@@ -9,13 +9,13 @@
 	},
 	"header": {
 		"name": "UtilityCraft:Energy Amplified! BP",
-		"description": "The Behavior pack for a UtilityCraft Expansion that focuses on adding a few machines and a heck ton of new generators!",
+		"description": "Alpha §4[0.6.0]§r \nThe Behavior pack for a UtilityCraft Expansion that focuses on adding a few machines and a heck ton of new generators!",
 		"min_engine_version": [
 			1,
 			21,
 			120
 		],
-		"uuid": "07d5a0d2-cc83-45c6-9517-74b7db5a97b7",
+		"uuid": "56d1c207-4705-4899-98f5-a5b2eae564a7",
 		"version": [
 			1,
 			0,
@@ -46,7 +46,7 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "cfc611a3-1ad4-4b72-81b7-75d502857d15",
+			"uuid": "0fa2f8fb-5086-4274-98a0-b82f94b16caf",
 			"version": [
 				1,
 				0,
