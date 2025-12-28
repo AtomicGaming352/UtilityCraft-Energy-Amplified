@@ -1,6 +1,18 @@
 {
 	"format_version": "1.1.0",
-	"utilitycraft:basic_poop_generator": {
-		"sound": "stone"
-	}
+	"utilitycraft:biomass_block": {
+		"sound": "moss_block"
+	},
+	"utilitycraft:compressed_biomass_block": {
+		"sound": "moss_block"
+	},
+	"utilitycraft:compressed_biomass_block2": {
+		"sound": "moss_block"
+	},
+	"utilitycraft:compressed_biomass_block3": {
+		"sound": "moss_block"
+	},
+	"utilitycraft:compressed_biomass_block4": {
+		"sound": "moss_block"
+	},
 }
