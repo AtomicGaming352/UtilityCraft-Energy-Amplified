@@ -41,3 +41,4 @@ tile.utilitycraft:bio_macerator.name=Biomacerator\nยง7- Accepted upgrades:\n   ย
 entity.utilitycraft:bio_macerator.name=Biomacerator
 entity.utilitycraft:biogenerator.name=Bio Generator
 entity.utilitycraft:biowaste_generator.name=Biowaste Generator
+entity.utilitycraft:lunarpanel.name=Lunar Panel
