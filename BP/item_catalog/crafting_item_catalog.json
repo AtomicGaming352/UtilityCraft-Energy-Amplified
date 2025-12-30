@@ -1,0 +1,45 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "construction",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "utilitycraft:ultimate_bio_generator",
+              "name": "neoutility:itemGroup.name.generators(Energy Amplified)"
+            },
+            "items": [
+              "utilitycraft:basic_bio_generator",
+              "utilitycraft:advanced_bio_generator",
+              "utilitycraft:expert_bio_generator",
+              "utilitycraft:ultimate_bio_generator",
+              "utilitycraft:basic_biowaste_generator",
+              "utilitycraft:advanced_biowaste_generator",
+              "utilitycraft:expert_biowaste_generator",
+              "utilitycraft:ultimate_biowaste_generator",
+              "utilitycraft:basic_lunar_panel",
+              "utilitycraft:advanced_lunar_panel",
+              "utilitycraft:expert_lunar_panel",
+              "utilitycraft:ultimate_lunar_panel",
+              "utilitycraft:basic_advanced_solar_panel",
+              "utilitycraft:advanced_advanced_solar_panel",
+              "utilitycraft:expert_advanced_solar_panel",
+              "utilitycraft:ultimate_advanced_solar_panel"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "utilitycraft:bio_macerator",
+              "name": "neoutility:itemGroup.name.machines(Energy Amplified)"
+            },
+            "items": [
+              "utilitycraft:bio_macerator",
+            ]
+          },
+        ]
+      }
+    ]
+  }
+}
