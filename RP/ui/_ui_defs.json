@@ -3,6 +3,7 @@
     "ui_defs": [
         "ui/biogen.json",
         "ui/biowastegenerator.json",
-        "ui/bio_macerator.json"
+        "ui/bio_macerator.json",
+        "ui/lunarpanel.json"
     ]
 }
