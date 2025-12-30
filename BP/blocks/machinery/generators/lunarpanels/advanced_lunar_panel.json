@@ -17,7 +17,7 @@
     "components": {
       "utilitycraft:lunar_panel": {
         "entity": {
-          "name": "solar_panel",
+          "name": "lunarpanel",
           "type": "passive"
         },
         "generator": {
