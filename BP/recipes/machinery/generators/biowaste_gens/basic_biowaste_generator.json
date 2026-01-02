@@ -9,18 +9,21 @@
         ],
         "pattern": [
             "SBS",
-            "BGB",
+            "CFC",
             "PRP"
         ],
         "key": {
             "S": {
                 "item": "utilitycraft:steel_ingot"
             },
-            "G": {
-                "item": "utilitycraft:basic_bio_generator"
+            "F": {
+                "item": "minecraft:furnace"
             },
             "B": {
                 "item": "utilitycraft:basic_chip"
+            },
+            "C": {
+                "item": "utilitycraft:chip"
             },
             "P": {
                 "item": "utilitycraft:biowaste"
@@ -40,5 +43,6 @@
         ]
     }
 }
+
 
 
