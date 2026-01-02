@@ -8,7 +8,7 @@
           {
             "group_identifier": {
               "icon": "utilitycraft:ultimate_bio_generator",
-              "name": "neoutility:itemGroup.name.generators(Energy Amplified)"
+              "name": "neoutility:itemGroup.name.enampedgens"
             },
             "items": [
               "utilitycraft:basic_bio_generator",
@@ -32,7 +32,7 @@
           {
             "group_identifier": {
               "icon": "utilitycraft:bio_macerator",
-              "name": "neoutility:itemGroup.name.machines(Energy Amplified)"
+              "name": "neoutility:itemGroup.name.enampedmachines"
             },
             "items": [
               "utilitycraft:bio_macerator",
