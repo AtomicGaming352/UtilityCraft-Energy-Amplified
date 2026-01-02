@@ -8,14 +8,14 @@
 		]
 	},
 	"header": {
-		"name": "Alpha §4[0.5.0]§r \nUtilityCraft:Energy Amplified! RP",
-		"description": "The Resource Pack for a UtilityCraft Expansion that focuses on adding a few machines and a heck ton of new generators!",
+		"name": "UtilityCraft:Energy Amplified! RP",
+		"description": "Alpha [0.6.0] \n The Resource Pack for a UtilityCraft Expansion that focuses on adding a few machines and a heck ton of new generators!",
 		"min_engine_version": [
 			1,
 			21,
 			120
 		],
-		"uuid": "0fa2f8fb-5086-4274-98a0-b82f94b16caf",
+		"uuid": "12b22239-7e00-450a-a3f2-4d95120210e8",
 		"version": [
 			1,
 			0,
@@ -35,7 +35,7 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "56d1c207-4705-4899-98f5-a5b2eae564a7",
+			"uuid": "809dc3f4-54c3-456b-b88a-d69bee15e09c",
 			"version": [
 				1,
 				0,
