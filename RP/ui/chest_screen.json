@@ -20,7 +20,7 @@
         "value": [
           {
             "requires": "($temp_container_title = 'entity.utilitycraft:lunarpanel.name')",
-            "$screen_content": "lunarpanel.utility_panel",
+            "$screen_content": "lunar_panel.utility_panel",
             "$screen_bg_content": "common.screen_background"
           }
         ]

@@ -1,6 +1,6 @@
 {
     "namespace": "lunar_panel",
-    "solar_panel_top": {
+    "lunar_panel_top": {
         "type": "collection_panel",
         "anchor_from": "center",
         "anchor_to": "center",
