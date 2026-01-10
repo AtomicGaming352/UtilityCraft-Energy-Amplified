@@ -29,10 +29,10 @@ tile.utilitycraft:expert_bio_generator.name=§bExpert Bio Generator \n §7 Rate:
 tile.utilitycraft:ultimate_bio_generator.name=§8Ultimate Bio Generator \n §7 Rate: 4 kDE/t
 
 ## Bio Waste Generators - Biowaste Generators
-tile.utilitycraft:basic_biowaste_generator.name=§eBasic Biowaste Generator \n §7 Rate: 20 DE/t
-tile.utilitycraft:advanced_biowaste_generator.name=§cAdvanced Biowaste Generator \n §7 Rate: 120 DE/t
-tile.utilitycraft:expert_biowaste_generator.name=§bExpert Biowaste Generator \n §7 Rate: 480 DE/t
-tile.utilitycraft:ultimate_biowaste_generator.name=§8Ultimate Biowaste Generator \n §7 Rate: 3.2 kDE/t
+tile.utilitycraft:basic_biowaste_generator.name=§eBasic Biowaster \n §7 Rate: 20 DE/t
+tile.utilitycraft:advanced_biowaste_generator.name=§cAdvanced Biowaster \n §7 Rate: 120 DE/t
+tile.utilitycraft:expert_biowaste_generator.name=§bExpert Biowaster \n §7 Rate: 480 DE/t
+tile.utilitycraft:ultimate_biowaste_generator.name=§8Ultimate Biowaster \n §7 Rate: 3.2 kDE/t
 
 ## Machines - Machines
 tile.utilitycraft:bio_macerator.name=Biomacerator\n§7- Accepted upgrades:\n   §a§7 §b§7
@@ -44,4 +44,39 @@ entity.utilitycraft:biowaste_generator.name=Biowaste Generator
 entity.utilitycraft:lunarpanel.name=Lunar Panel
 
 ## Categories - Categories
-neoutility:itemGroup.name.enampedgens=Generators (§l§bEnergy Amplified§r)
+neoutility:itemGroup.name.enampedgens=Generators (§bEnergy Amplified§r)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Extras - Secrets
+tile.utilitycraft:radical_biowaste_generator.name=§qRadical Biowaster \n §7 Rate: 3.2 kDE/t
