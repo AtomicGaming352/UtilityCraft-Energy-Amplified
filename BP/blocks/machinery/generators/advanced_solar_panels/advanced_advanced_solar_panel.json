@@ -24,7 +24,7 @@
 					"rate_speed_base": 240
 				}
 			},
-			"minecraft:geometry": "geometry.enam_modern_panel",
+			"minecraft:geometry": "geometry.amped_modern_panel",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "utilitycraft_advanced_modern_solar_panel_off",
