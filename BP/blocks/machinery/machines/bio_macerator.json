@@ -31,7 +31,7 @@
 			"utilitycraft:simple_machine": {
 				"rotation": "facing",
 				"entity": {
-					"name": "crusher",
+					"name": "bio_macerator",
 					"input_type": "simple",
 					"output_type": "simple",
 					"inventory_size": 7
@@ -457,5 +457,6 @@
 		]
 	}
               }
+
 
 
