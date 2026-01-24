@@ -4,11 +4,25 @@ item.utilitycraft:biomass=Biomasa
 item.utilitycraft:compost=Abono
 item.utilitycraft:biowaste=Residuos Orgánicos
 
+## Blocks - Bloques
+tile.utilitycraft:biomass_block.name=Mantillo de Biomasa
+tile.utilitycraft:compressed_biomass_block.name=Mantillo de Biomasa Comprimida 
+tile.utilitycraft:compressed_biomass_block.name2=Mantillo de Biomasa Doblemente Comprimido
+tile.utilitycraft:compressed_biomass_block.name3=Mantillo de Biomasa Triplemente Comprimida
+tile.utilitycraft:compressed_biomass_block.name4=Mantillo de Biomasa Cuádruplemente Comprimida
+
+## Solunar panels - paneles lunares
+tile.utilitycraft:basic_lunar_panel.name=§ePanel lunar básico \n §7 Tasa: 12 DE/t
+tile.utilitycraft:advanced_lunar_panel.name=§cPanel lunar avanzado \n §7 Tasa: 48 DE/t
+tile.utilitycraft:expert_lunar_panel.name=§bPanel Lunar Experto \n §7 Tasa: 192 DE/t
+tile.utilitycraft:ultimate_lunar_panel.name=§8Panel Lunar Definitivo \n §7 Tasa: 1200 DE/t
+
+
 ## Advanced Solar Panels - Paneles Solares Avanzados (Tier 2)
-tile.utilitycraft:basic_advanced_solar_panel.name=Panel Solar T2 Básico
-tile.utilitycraft:advanced_advanced_solar_panel.name=Panel Solar T2 Avanzado
-tile.utilitycraft:expert_advanced_solar_panel.name=Panel Solar T2 Experto
-tile.utilitycraft:ultimate_advanced_solar_panel.name=Panel Solar T2 Definitivo
+tile.utilitycraft:basic_advanced_solar_panel.name=§ePanel Solar Moderno Básico §r[§cT2§r] \n §7Tasa: 60 DE/t
+tile.utilitycraft:advanced_advanced_solar_panel.name=§cPanel Solar Moderno Avanzado §r[§cT2§r] \n §7Tasa: 240 DE/t
+tile.utilitycraft:expert_advanced_solar_panel.name=§bPanel Solar Moderno Experto §r[§cT2§r] \n §7Tasa: 960 DE/t
+tile.utilitycraft:ultimate_advanced_solar_panel.name=§8Panel Solar Último Moderno §r[§cT2§r] \n §7Tasa: 6 kDE/t
 
 ## Bio Generators - Bio Generadores
 tile.utilitycraft:basic_bio_generator.name=Bio Generador Básico
