@@ -1,4 +1,4 @@
- A Utility Craft Extension thats adds a few machines and a heck ton of energy amplifying generators
+A Utility Craft Extension thats adds a few machines and a heck ton of energy amplifying generators
 
 Generators included in 1.0:
 
@@ -15,9 +15,9 @@ Machines included in 1.0:
 
 - Bio macerator
   - accepts speed and energy upgrades (max of 8 each), breaks down organic matter to turn into either biowaste, compost, or biomass cheaply
-- Scrapper
-  - accepts speed and energy upgrades (max of 8 each), turns items into the "scrap" item
-    > currently unobtainable
+- ~~Scrapper~~
+  - ~~accepts speed and energy upgrades (max of 8 each), turns items into the "scrap" item~~
+    > ~~currently unobtainable~~
 
 Items included in 1.0:
 
@@ -27,6 +27,8 @@ Items included in 1.0:
   - the second/middle tier of crafting Biomass, can be used as a way to get power by using it in the Bio generator or Biowaste generator, can be obtained by crafting or through the bio macerator
 - Biowaste
   - the first tier of crafting Biomass, can be used as a way to get power by using it in the Bio generator or Biowaste generator, can be obtained by crafting or through the bio macerator
-- Scrap
-  - no use yet, obtained by putting items in the scrapper
-    > Currently unobtainable as the scrapper is also unobtainable
+- ~~Scrap~~
+  - ~~no use yet, obtained by putting items in the scrapper~~
+    > ~~Currently unobtainable as the scrapper is also unobtainable~~
+ > [!Note]
+ > The Scrapper and Scrap were removed from 1.0
