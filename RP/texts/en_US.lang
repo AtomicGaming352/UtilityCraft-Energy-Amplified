@@ -80,3 +80,5 @@ neoutility:itemGroup.name.enampedgens=Generators (§bEnergy Amplified§r)
 
 ## Extras - Secrets
 tile.utilitycraft:radical_biowaste_generator.name=§qRadical Biowaster \n §7 Rate: 3.2 kDE/t
+tile.utilitycraft:radical_bio_generator.name=§qRadical Bio Generator \n §7 Rate: 4 kDE/t
+
