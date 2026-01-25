@@ -1,27 +1,52 @@
 ## Items - Itens
 item.utilitycraft:biomass=Biomassa
 item.utilitycraft:compost=Adubo
-item.utilitycraft:biowaste=Restos Orgânicos
+item.utilitycraft:biowaste=Bio-Resíduo
 
-## Advanced Solar Panels - Painéis Solares Avançados (Tier 2)
-tile.utilitycraft:basic_advanced_solar_panel.name=Painel Solar T2 Básico
-tile.utilitycraft:advanced_advanced_solar_panel.name=Painel Solar T2 Avançado
-tile.utilitycraft:expert_advanced_solar_panel.name=Painel Solar T2 Expert
-tile.utilitycraft:ultimate_advanced_solar_panel.name=Painel Solar T2 Supremo
+## Biomass - Blocos e comprimidos
+# "Mulch" foi traduzido para o padrão de blocos comprimidos do Minecraft (ex: Pedregulho Comprimido) para ficar mais limpo.
+tile.utilitycraft:biomass_block.name=Bloco de Biomassa
+tile.utilitycraft:compressed_biomass_block.name=Biomassa Comprimida
+tile.utilitycraft:compressed_biomass_block2.name=Biomassa Duplamente Comprimida
+tile.utilitycraft:compressed_biomass_block3.name=Biomassa Triplamente Comprimida
+tile.utilitycraft:compressed_biomass_block4.name=Biomassa Quadruplamente Comprimida
+
+## Advanced Solar Panels - Painéis Solares (Tier 2)
+tile.utilitycraft:basic_advanced_solar_panel.name=§ePainel Solar Moderno Básico §r[§cT2§r] \n §7 Geração: 60 DE/t
+tile.utilitycraft:advanced_advanced_solar_panel.name=§cPainel Solar Moderno Avançado §r[§cT2§r] \n §7 Geração: 240 DE/t
+tile.utilitycraft:expert_advanced_solar_panel.name=§bPainel Solar Moderno Expert §r[§cT2§r] \n §7 Geração: 960 DE/t
+tile.utilitycraft:ultimate_advanced_solar_panel.name=§8Painel Solar Moderno Supremo §r[§cT2§r] \n §7 Geração: 6 kDE/t
+
+## Solunar Panels - Painéis Lunares
+tile.utilitycraft:basic_lunar_panel.name=§ePainel Lunar Básico \n §7 Geração: 12 DE/t
+tile.utilitycraft:advanced_lunar_panel.name=§cPainel Lunar Avançado \n §7 Geração: 48 DE/t
+tile.utilitycraft:expert_lunar_panel.name=§bPainel Lunar Expert \n §7 Geração: 192 DE/t
+tile.utilitycraft:ultimate_lunar_panel.name=§8Painel Lunar Supremo \n §7 Geração: 1200 DE/t
 
 ## Bio Generators - Bio-Geradores
-tile.utilitycraft:basic_bio_generator.name=Bio-Gerador Básico
-tile.utilitycraft:advanced_bio_generator.name=Bio-Gerador Avançado
-tile.utilitycraft:expert_bio_generator.name=Bio-Gerador Expert
-tile.utilitycraft:ultimate_bio_generator.name=Bio-Gerador Supremo
+tile.utilitycraft:basic_bio_generator.name=§eBio-Gerador Básico \n §7 Geração: 35 DE/t
+tile.utilitycraft:advanced_bio_generator.name=§cBio-Gerador Avançado \n §7 Geração: 140 DE/t
+tile.utilitycraft:expert_bio_generator.name=§bBio-Gerador Expert \n §7 Geração: 560 DE/t
+tile.utilitycraft:ultimate_bio_generator.name=§8Bio-Gerador Supremo \n §7 Geração: 4 kDE/t
 
-## Bio Waste Generators - Geradores de Restos Orgânicos
-tile.utilitycraft:basic_biowaste_generator.name=Gerador de Restos Orgânicos Básico
-tile.utilitycraft:advanced_biowaste_generator.name=Gerador de Restos Orgânicos Avançado
-tile.utilitycraft:expert_biowaste_generator.name=Gerador de Restos Orgânicos Expert
-tile.utilitycraft:ultimate_biowaste_generator.name=Gerador de Restos Orgânicos Supremo
+## Bio Waste Generators - Geradores de Resíduos
+# "Biowaster" adaptado para indicar que gera energia a partir do lixo (Bio-Resíduo).
+tile.utilitycraft:basic_biowaste_generator.name=§eGerador de Resíduos Básico \n §7 Geração: 20 DE/t
+tile.utilitycraft:advanced_biowaste_generator.name=§cGerador de Resíduos Avançado \n §7 Geração: 120 DE/t
+tile.utilitycraft:expert_biowaste_generator.name=§bGerador de Resíduos Expert \n §7 Geração: 480 DE/t
+tile.utilitycraft:ultimate_biowaste_generator.name=§8Gerador de Resíduos Supremo \n §7 Geração: 3.2 kDE/t
+
+## Machines - Máquinas
+tile.utilitycraft:bio_macerator.name=Biomacerador\n§7- Melhorias aceitas:\n   §a§7 §b§7
 
 ## Entities - Entidades
 entity.utilitycraft:bio_macerator.name=Biomacerador
-entity.utilitycraft:biogenerator.name=Biogerador
-entity.utilitycraft:biowaste_generator.name=Gerador de Restos Orgânicos
+entity.utilitycraft:biogenerator.name=Bio-Gerador
+entity.utilitycraft:biowaste_generator.name=Gerador de Resíduos
+entity.utilitycraft:lunarpanel.name=Painel Lunar
+
+## Categories - Categorias
+neoutility:itemGroup.name.enampedgens=Geradores (§bEnergia Amplificada§r)
+
+## Extras - Segredos
+tile.utilitycraft:radical_biowaste_generator.name=§qGerador de Resíduos Radical \n §7 Geração: 3.2 kDE/t
