@@ -1,0 +1,11 @@
+{
+    "format_version": "1.21.40",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "utilitycraft:item"
+        },
+        "tags": ["furnace", "blast_furnace"],
+        "input": "utilitycraft:item",
+        "output": "utilitycraft:newitem"
+    }
+}
