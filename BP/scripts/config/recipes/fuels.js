@@ -86,6 +86,10 @@ export const bioFuels = [
 export const poopFuels = [
   { id: 'biowaste', de: 8000 },
   { id: 'compost', de: 24000 },
+  { id: 'rotten_flesh', de: 7200},
+  { id: 'poisonous_potato', de: 8000 },
+  { id: 'beetroot_seeds', de: 3200 },
+  { id: 'wheat_seeds', de: 3200 },
 ]
 
 export const radicalbioFuels = [
