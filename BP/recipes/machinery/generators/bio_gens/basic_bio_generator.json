@@ -17,7 +17,7 @@
                 "item": "utilitycraft:steel_ingot"
             },
             "F": {
-                "item": "minecraft:smoker"
+                "item": "utilitycraft:basic_biowaste_generator"
             },
             "B": {
                 "item": "utilitycraft:basic_chip"
