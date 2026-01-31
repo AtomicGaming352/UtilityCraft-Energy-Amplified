@@ -10,6 +10,7 @@ export const bioFuels = [
   { id: "sugar_cane", de: 900 },
   { id: "bamboo", de: 800 },
   { id: "cactus", de: 800 },
+  { id: "sapling", de: 600 },
 
   // 🍃 Plant material & crops (medium energy)
   { id: 'wheat', de: 1600 },
@@ -90,6 +91,7 @@ export const poopFuels = [
   { id: 'poisonous_potato', de: 8000 },
   { id: 'beetroot_seeds', de: 3200 },
   { id: 'wheat_seeds', de: 3200 },
+  { id: "litter", de: 1600 },
 ]
 
 export const radicalbioFuels = [
