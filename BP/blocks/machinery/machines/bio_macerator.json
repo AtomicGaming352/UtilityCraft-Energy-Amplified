@@ -47,7 +47,15 @@
 				}
 			},
 			"utilitycraft:machine_recipes": {
+				"utilitycraft:biowaste": {
+					"output": "utilitycraft:compost",
+					"amount": 1,
+					"required": 2 },
 				"minecraft:rotten_flesh": {
+					"output": "utilitycraft:biowaste",
+					"amount": 1,
+					"required": 2 },
+				"minecraft:leaf_litter": {
 					"output": "utilitycraft:biowaste",
 					"amount": 1,
 					"required": 2 },
@@ -56,6 +64,10 @@
 					"amount": 1,
 					"required": 4 },
 				"minecraft:kelp": {
+					"output": "utilitycraft:biowaste",
+					"amount": 1,
+					"required": 2 },
+				"minecraft:cocoa_bean": {
 					"output": "utilitycraft:biowaste",
 					"amount": 1,
 					"required": 2 },
@@ -457,6 +469,7 @@
 		]
 	}
               }
+
 
 
 
