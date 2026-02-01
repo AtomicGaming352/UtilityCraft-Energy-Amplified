@@ -8,7 +8,12 @@
 			}
 		},
 		"components": {
-			"minecraft:icon": "utilitycraft_biowaste"
+			"minecraft:icon": "utilitycraft_biowaste",
+			"minecraft:use_duration": 16,
+
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation_modifier": "poor"
 		}
 	}
 }
