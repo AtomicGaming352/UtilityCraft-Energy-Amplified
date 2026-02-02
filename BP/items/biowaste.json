@@ -17,10 +17,11 @@
 		  "effects": [
     {
       "name": "hunger",
-      "chance": 0.3,
+      "chance": 0.1,
       "duration": 30,
       "amplifier": 0
 	}
+		  ]
 		}
 	}
 }
