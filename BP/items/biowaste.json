@@ -10,18 +10,17 @@
 		"components": {
 			"minecraft:icon": "utilitycraft_biowaste",
 			"minecraft:use_duration": 16,
-
-      "minecraft:food": {
-        "nutrition": 1,
-        "saturation_modifier": "poor",
-		  "can_always_eat": true,
-		  "effects": [
-    {
-      "name": "hunger",
-      "chance": 0.1,
-      "duration": 30,
-      "amplifier": 0
-	}
+			"minecraft:food": {
+				"nutrition": 1,
+				"saturation_modifier": "0.4",
+				"can_always_eat": true,
+				"effects": [
+					{
+						"name": "hunger",
+						"chance": 0.1,
+						"duration": 30,
+						"amplifier": 0
+					}
 		  ]
 		}
 	}
