@@ -13,7 +13,14 @@
 
       "minecraft:food": {
         "nutrition": 1,
-        "saturation_modifier": "poor"
+        "saturation_modifier": "poor",
+		  "effects": [
+    {
+      "name": "hunger",
+      "chance": 0.3,
+      "duration": 30,
+      "amplifier": 0
+	}
 		}
 	}
 }
