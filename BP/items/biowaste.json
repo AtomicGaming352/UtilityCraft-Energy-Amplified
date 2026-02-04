@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.21.0",
   "minecraft:item": {
     "description": {
       "identifier": "utilitycraft:biowaste",
@@ -13,7 +13,7 @@
       "minecraft:use_animation": "eat",
 
       "minecraft:use_modifiers": {
-        "use_duration": 24
+        "use_duration": 16
       },
 
       "minecraft:food": {
@@ -23,28 +23,28 @@
       },
 
       "minecraft:on_consume": {
-        "event": "apply_effects"
-      }
-    },
-
-    "events": {
-      "apply_effects": {
-        "add_mob_effect": {
-          "effect": "nausea",
-          "duration": 30,
-          "amplifier": 1
-        },
-        "randomize": [
+        "sequence": [
           {
-            "weight": 40,
             "add_mob_effect": {
-              "effect": "hunger",
+              "effect": "nausea",
               "duration": 30,
               "amplifier": 1
             }
           },
           {
-            "weight": 60
+            "randomize": [
+              {
+                "weight": 40,
+                "add_mob_effect": {
+                  "effect": "hunger",
+                  "duration": 30,
+                  "amplifier": 1
+                }
+              },
+              {
+                "weight": 60
+              }
+            ]
           }
         ]
       }
