@@ -51,40 +51,40 @@
 					"output": "minecraft:iron_ingot",
 					"amount": 2,
 					"required": 1,
-          "cost:" 7200 }, 
+                    "cost:" 7200 }, 
 				"utilitycraft:gold_chunk": {
 					"output": "minecraft:gold_ingot",
 					"amount": 2,
 					"required": 1,
-          "cost:" 7200 },
+                    "cost:" 7200 },
         "utilitycraft:copper_chunk": {
 					"output": "minecraft:copper_ingot",
 					"amount": 2,
 					"required": 1,
-          "cost:" 7200 },
+                    "cost:" 7200 },
         "minecraft:raw_iron": {
 					"output": "minecraft:iron_ingot",
 					"amount": 2,
 					"required": 1,
-          "cost:" 7200 },
+                    "cost:" 7200 },
         "minecraft:raw_gold": {
 					"output": "minecraft:gold_ingot",
 					"amount": 2,
 					"required": 1,
-          "cost:" 7200 },
+                    "cost:" 7200 },
         "minecraft:raw_copper": {
 					"output": "minecraft:copper_ingot",
 					"amount": 2,
 					"required": 1,
-          "cost:" 7200 },
+			        "cost:" 7200 },
         "utilitycraft:diamond_chunk": {
 					"output": "minecraft:diamond",
 					"amount": 1,
-					"required": 1, },
+					"required": 1 },
         "utilitycraft:emerald_chunk": {
 					"output": "minecraft:emerald",
 					"amount": 1,
-					"required": 1, },
+					"required": 1 },
 			},
 			"minecraft:geometry": "geometry.utilitycraft_block_2",
 			"minecraft:material_instances": {
