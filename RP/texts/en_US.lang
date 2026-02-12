@@ -36,6 +36,7 @@ tile.utilitycraft:ultimate_biowaste_generator.name=§8Ultimate Biowaster \n §7 
 
 ## Machines - Machines
 tile.utilitycraft:bio_macerator.name=Biomacerator\n§7- Accepted upgrades:\n   §a§7 §b§7
+tile.utilitycraft:ore_processor.name=Ore Processor\n§7- Accepted upgrades:\n   §a§7 §b§7 §2 \n   @Energy Amplified
 
 ## Entities - Entities
 entity.utilitycraft:bio_macerator.name=Biomacerator
