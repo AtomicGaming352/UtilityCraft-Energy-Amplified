@@ -57,6 +57,16 @@
 					"amount": 2,
 					"required": 1,
                     "cost": 7200 },
+				"utilitycraft:deepslate_iron_chunk": {
+					"output": "minecraft:iron_ingot",
+					"amount": 2,
+					"required": 1,
+                    "cost": 7200 }, 
+				"utilitycraft:deepslate_gold_chunk": {
+					"output": "minecraft:gold_ingot",
+					"amount": 2,
+					"required": 1,
+                    "cost": 7200 },
         "utilitycraft:copper_chunk": {
 					"output": "minecraft:copper_ingot",
 					"amount": 2,
@@ -84,6 +94,26 @@
         "utilitycraft:emerald_chunk": {
 					"output": "minecraft:emerald",
 					"amount": 1,
+					"required": 1 },
+				"utilitycraft:deepslate_diamond_chunk": {
+					"output": "minecraft:diamond",
+					"amount": 1,
+					"required": 1 },
+        "utilitycraft:deepslate_emerald_chunk": {
+					"output": "minecraft:emerald",
+					"amount": 1,
+					"required": 1 },
+				"utilitycraft:coal_chunk": {
+					"output": "minecraft:coal",
+					"amount": 1,
+					"required": 1 },
+        "utilitycraft:deepslate_coal_chunk": {
+					"output": "minecraft:coal",
+					"amount": 1,
+					"required": 1 },
+				"utilitycraft:redstone_chunk": {
+					"output": "minecraft:redstone",
+					"amount": 4,
 					"required": 1 }
 			},
 			"minecraft:geometry": "geometry.utilitycraft_block_2",
