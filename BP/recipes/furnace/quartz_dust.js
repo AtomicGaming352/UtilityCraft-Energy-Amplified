@@ -5,7 +5,7 @@
             "identifier": "utilitycraft:is_silicon"
         },
         "tags": ["furnace", "blast_furnace"],
-        "input": "utilitycraft:nether_quartz_dust",
-        "output": "ae2:silicon"
+        "input": "utilitycraft:quartz_dust",
+        "output": "ae2be:silicon"
     }
 }
