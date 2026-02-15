@@ -125,6 +125,9 @@
 		},
 		"utilitycraft_biomass_block": {
 			"textures": "textures/blocks/compressed/biomass/biomass_block"
+		},
+		"utilitycraft_flux_block": {
+			"textures": "textures/blocks/compressed/flux/flux_block"
 		}
 	}
 }
