@@ -1,0 +1,36 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "utilitycraft:null_crystal"
+        },
+        "tags": [
+            "utilitycraft_workbench"
+        ],
+        "pattern": [
+            "DED",
+            "EFE",
+            "DED"
+        ],
+        "key": {
+            "D": {
+                "item": "minecraft:amethyst"
+            },
+            "F": {
+                "item": "utilitycraft:flux_block"
+            },
+            "E": {
+                "item": "minecraft:echo_shard"
+            }
+        },
+        "result": {
+            "item": "utilitycraft:null_crystal",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:flux"
+            }
+        ]
+    }
+}
