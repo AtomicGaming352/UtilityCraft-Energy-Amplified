@@ -8,6 +8,12 @@
 		},
 		"utilitycraft_biomass": {
 			"textures": "textures/items/biomass"
+		},
+		"utilitycraft_flux_dust":{
+			"textures": "textures/items/fluxes/flux_dust"
+		},
+		"utilitycraft_null_crystal":{
+			"textures": "textures/items/fluxes/null_crystal"
 		}
 	}
 }
