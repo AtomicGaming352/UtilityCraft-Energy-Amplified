@@ -14,6 +14,12 @@
 		},
 		"utilitycraft_null_crystal":{
 			"textures": "textures/items/fluxes/null_crystal"
+		},
+		"utilitycraft_flux_crystal":{
+			"textures": "textures/items/fluxes/flux_crystal"
+		},
+		"utilitycraft_flux_core":{
+			"textures": "textures/items/fluxes/flux_core"
 		}
 	}
 }
