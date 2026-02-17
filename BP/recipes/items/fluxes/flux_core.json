@@ -1,0 +1,36 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "utilitycraft:flux_core"
+        },
+        "tags": [
+            "utilitycraft_workbench"
+        ],
+        "pattern": [
+            "DFD",
+            "FNF",
+            "DFD"
+        ],
+        "key": {
+            "N": {
+                "item": "utilitycraft:null_crystal"
+            },
+            "F": {
+                "item": "utilitycraft:flux_block"
+            },
+            "E": {
+                "item": "utilitycraft:steel_plate"
+            }
+        },
+        "result": {
+            "item": "utilitycraft:flux_core",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:flux_block"
+            }
+        ]
+    }
+}
