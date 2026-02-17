@@ -4,8 +4,10 @@ item.utilitycraft:compost=Compost §9 \n   @Energy Amplified
 item.utilitycraft:biowaste=Biowaste §9 \n   @Energy Amplified
 item.utilitycraft:flux=Flux Dust §9 \n   @Energy Amplified
 item.utilitycraft:null_crystal=Null Crystal §9 \n   @Energy Amplified
+item.utilitycraft:flux_crystal=Flux Crystal §9 \n   @Energy Amplified
+item.utilitycraft:flux_core=Flux Core §9 \n   @Energy Amplified
 
-## Biomass - blocks and compressed biomass stuff
+## Blocks - blocks and compressed biomass stuff
 tile.utilitycraft:biomass_block.name=Biomass Mulch §9 \n   @Energy Amplified
 tile.utilitycraft:compressed_biomass_block.name=Compressed Biomass Mulch §9 \n   @Energy Amplified
 tile.utilitycraft:compressed_biomass_block2.name=Double Compressed Biomass Mulch §9 \n   @Energy Amplified
