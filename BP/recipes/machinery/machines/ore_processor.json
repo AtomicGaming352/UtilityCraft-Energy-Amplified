@@ -1,0 +1,45 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "utilitycraft:ore_processor"
+        },
+        "tags": [
+            "utilitycraft_workbench"
+        ],
+        "pattern": [
+            "DPD",
+            "BFB",
+            "LGL"
+        ],
+        "key": {
+            "D": {
+                "item": "utilitycraft:expert_chip"
+            },
+            "B": {
+                "item": "utilitycraft:crusher"
+            },
+            "F": {
+                "item": "utilitycraft:flux_core"
+            },
+            "P": {
+                "item": "utilitycraft:incinerator"
+            },
+            "G": {
+                "item": "minecraft:flux_block"
+            },
+            "L": {
+                "item": "utilitycraft:flux"
+            }
+        },
+        "result": {
+            "item": "utilitycraft:ore_processor",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:flux"
+            }
+        ]
+    }
+}
