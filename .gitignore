@@ -7,3 +7,6 @@ Desktop.ini
 builds
 /.bridge
 /.vscode
+!/.vscode/
+/.vscode/*
+!/.vscode/tasks.json
