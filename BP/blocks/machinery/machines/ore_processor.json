@@ -51,47 +51,47 @@
 					"output": "minecraft:iron_ingot",
 					"amount": 2,
 					"required": 1,
-                    "cost": 7200 }, 
+					"cost": 7200 },
 				"utilitycraft:gold_chunk": {
 					"output": "minecraft:gold_ingot",
 					"amount": 2,
 					"required": 1,
-                    "cost": 7200 },
+					"cost": 7200 },
 				"utilitycraft:deepslate_iron_chunk": {
 					"output": "minecraft:iron_ingot",
 					"amount": 2,
 					"required": 1,
-                    "cost": 7200 }, 
+					"cost": 7200 },
 				"utilitycraft:deepslate_gold_chunk": {
 					"output": "minecraft:gold_ingot",
 					"amount": 2,
 					"required": 1,
-                    "cost": 7200 },
-        "utilitycraft:copper_chunk": {
+					"cost": 7200 },
+				"utilitycraft:copper_chunk": {
 					"output": "minecraft:copper_ingot",
 					"amount": 2,
 					"required": 1,
-                    "cost": 7200 },
-        "minecraft:raw_iron": {
+					"cost": 7200 },
+				"minecraft:raw_iron": {
 					"output": "minecraft:iron_ingot",
 					"amount": 2,
 					"required": 1,
-                    "cost": 7200 },
-        "minecraft:raw_gold": {
+					"cost": 7200 },
+				"minecraft:raw_gold": {
 					"output": "minecraft:gold_ingot",
 					"amount": 2,
 					"required": 1,
-                    "cost": 7200 },
-        "minecraft:raw_copper": {
+					"cost": 7200 },
+				"minecraft:raw_copper": {
 					"output": "minecraft:copper_ingot",
 					"amount": 2,
 					"required": 1,
-			        "cost": 7200 },
-        "utilitycraft:diamond_chunk": {
+					"cost": 7200 },
+				"utilitycraft:diamond_chunk": {
 					"output": "minecraft:diamond",
 					"amount": 1,
 					"required": 1 },
-        "utilitycraft:emerald_chunk": {
+				"utilitycraft:emerald_chunk": {
 					"output": "minecraft:emerald",
 					"amount": 1,
 					"required": 1 },
@@ -99,7 +99,7 @@
 					"output": "minecraft:diamond",
 					"amount": 1,
 					"required": 1 },
-        "utilitycraft:deepslate_emerald_chunk": {
+				"utilitycraft:deepslate_emerald_chunk": {
 					"output": "minecraft:emerald",
 					"amount": 1,
 					"required": 1 },
@@ -107,7 +107,7 @@
 					"output": "minecraft:coal",
 					"amount": 1,
 					"required": 1 },
-        "utilitycraft:deepslate_coal_chunk": {
+				"utilitycraft:deepslate_coal_chunk": {
 					"output": "minecraft:coal",
 					"amount": 1,
 					"required": 1 },
@@ -133,9 +133,9 @@
 				"seconds_to_destroy": 1
 			},
 			"minecraft:destructible_by_explosion": false,
-			"tag:dorios:energy": {},
-			"tag:dorios:item": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {}
+			"tag:dorios:energy": { },
+			"tag:dorios:item": { },
+			"tag:minecraft:is_pickaxe_item_destructible": { }
 		},
 		"permutations": [
 			{
@@ -440,7 +440,7 @@
 			}
 		]
 	}
-              }
+}
 
 
 

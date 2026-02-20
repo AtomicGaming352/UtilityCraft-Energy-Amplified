@@ -1,4 +1,6 @@
 {
+	"resource_pack_name": "UC-EA",
+	"texture_name": "atlas.items",
 	"texture_data": {
 		"utilitycraft_biowaste":{
 			"textures": "textures/items/biowaste"
