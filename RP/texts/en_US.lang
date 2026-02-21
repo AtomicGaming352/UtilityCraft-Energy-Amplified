@@ -51,7 +51,7 @@ entity.utilitycraft:lunarpanel.name=Lunar Panel
 
 ## Categories - Categories
 neoutility:itemGroup.name.enampedgens=Generators (§bEnergy Amplified§r)
-
+neoutility:itemGroup.name.enampedmachines=Machines (§bEnergy Amplified§r)
 
 
 
