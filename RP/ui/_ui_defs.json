@@ -4,6 +4,7 @@
         "ui/biogen.json",
         "ui/biowastegenerator.json",
         "ui/bio_macerator.json",
-        "ui/lunar_panel.json"
+        "ui/lunar_panel.json",
+        "ui/ore_processor.json"
     ]
 }
