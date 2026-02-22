@@ -10,17 +10,17 @@
 	},
 	"header": {
 		"name": "Energy Amplified:Limitless Power! BP",
-		"description": "Beta [1.1.1] \nNeoUtility Studios \nThe Behavior pack for a UtilityCraft Expansion that focuses on adding a few machines and a heck ton of new generators!",
+		"description": "Beta [1.1.2] \nNeoUtility Studios \nThe Behavior pack for a UtilityCraft Expansion that focuses on adding a few machines and a heck ton of new generators!",
 		"min_engine_version": [
 			1,
 			21,
 			120
 		],
-		"uuid": "1ff56659-50b2-4ae3-8176-6ee7a387868c",
+		"uuid": "94b96ba4-f5f1-4e3f-bc9a-ea373d7d7f85",
 		"version": [
 			1,
-			0,
-			0
+			1,
+			2
 		]
 	},
 	"modules": [
@@ -47,11 +47,11 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "59bee828-7817-4cc2-9eb3-1d7c9bc7dc7f",
+			"uuid": "44640002-f4f9-4746-adc6-add5cb853cf6",
 			"version": [
 				1,
-				0,
-				0
+				1,
+				2
 			]
 		},
 		{
