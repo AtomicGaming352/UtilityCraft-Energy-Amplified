@@ -36,7 +36,8 @@
             },
             "items": [
               "utilitycraft:bio_macerator",
-              "utilitycraft:ore_processor"
+              "utilitycraft:ore_processor",
+              "utilitycraft:fluxinator"
             ]
           }
         ]
