@@ -147,7 +147,7 @@
                                 "layer": 5,
                                 "controls": [
                                     {
-                                        "fluxinator_top@ore_processor.fluxinator_top": {}
+                                        "fluxinator_top@fluxinator.fluxinator_top": {}
                                     },
                                     {
                                         "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {}
