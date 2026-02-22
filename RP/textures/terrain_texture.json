@@ -111,6 +111,12 @@
 		"utilitycraft_ore_processor_on": {
 			"textures": "textures/blocks/machines/ore_processor_on"
 		},
+		"utilitycraft_fluxinator_off": {
+			"textures": "textures/blocks/machines/fluxinator_off"
+		},
+		"utilitycraft_fluxinator_on": {
+			"textures": "textures/blocks/machines/fluxinator_on"
+		},
 		"utilitycraft_compressed_biomass_block_x1": {
 			"textures": "textures/blocks/compressed/biomass/compressed_biomass_x1"
 		},
