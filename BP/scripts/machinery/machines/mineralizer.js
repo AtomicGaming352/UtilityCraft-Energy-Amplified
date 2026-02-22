@@ -53,7 +53,7 @@ DoriosAPI.register.blockComponent('mineralizer', {
         const meshData = meshSlot.getComponent("utilitycraft:mesh").customComponentParameters.params
 
         // Validate recipe based on the input item
-        const recipe = sieveRecipes[inputSlot?.typeId]
+        const recipe = mineralRecipes[inputSlot?.typeId]
         if (!recipe) {
             machine.showWarning('Invalid Block')
             return;
