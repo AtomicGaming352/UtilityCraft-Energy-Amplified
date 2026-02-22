@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "utilitycraft:flux_block_decompress"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "utilitycraft:flux_block"
+      }
+    ],
+    "result": {
+      "item": "utilitycraft:flux",
+      "count": 9
+    },
+    "unlock": [
+      {
+        "item": "utilitycraft:flux"
+      },
+      {
+        "item": "utilitycraft:flux_block"
+      }
+    ]
+  }
+}
