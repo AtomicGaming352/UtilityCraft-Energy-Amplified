@@ -9,14 +9,14 @@
 		"product_type": "addon"
 	},
 	"header": {
-		"name": "UtilityCraft:Energy Amplified! RP",
+		"name": "UtilityCraft:Energy Amplified! [BETA] RP",
 		"description": "Beta [1.1.2] \n The Resource Pack for a UtilityCraft Expansion that focuses on adding a few machines and a heck ton of new generators!",
 		"min_engine_version": [
 			1,
 			21,
 			120
 		],
-		"uuid": "44640002-f4f9-4746-adc6-add5cb853cf6",
+		"uuid": "fd44c689-7a95-4108-b209-ac92a848c5fe",
 		"version": [
 			1,
 			1,
@@ -36,7 +36,7 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "94b96ba4-f5f1-4e3f-bc9a-ea373d7d7f85",
+			"uuid": "b023f1ec-e8cd-4ef9-961b-c57465277c8c",
 			"version": [
 				1,
 				1,
