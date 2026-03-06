@@ -198,4 +198,67 @@ const mineralRecipesRegister = {
         { item: 'minecraft:ender_pearl', amount: 9, chance: 0.16, tier: 4 }
     ]
       }
+
+
+world.afterEvents.worldLoad.subscribe(() => {
+    system.sendScriptEvent("utilitycraft:register_mineral_drop", JSON.stringify(sieveRecipesRegister));
+});
+
+/**
+ * ScriptEvent receiver: "utilitycraft:register_sieve_drop"
+ * 
+ * Allows other addons or scripts to **add new drops to existing blocks only**.
+ * 
+ * Expected payload format (JSON):
+ * 
+ * {
+ *   "minecraft:gravel": [
+ *     { "item": "minecraft:string", "amount": 1, "chance": 0.05 }
+ *   ],
+ *   "minecraft:dirt": [
+ *     { "item": "minecraft:apple", "amount": 1, "chance": 0.10 }
+ *   ]
+ * }
+ * 
+ * - If a block ID is not already defined in `sieveRecipes`, the entry is skipped.
+ * - If an invalid format is detected, a warning is printed and ignored.
+ */
+system.afterEvents.scriptEventReceive.subscribe(({ id, message }) => {
+    if (id !== "utilitycraft:register_mineral_drop") return;
+
+    try {
+        const payload = JSON.parse(message);
+        if (!payload || typeof payload !== "object") {
+            console.warn("[UtilityCraft] Invalid payload format received.");
+            return;
+        }
+
+        let addedBlocks = 0;
+        let addedDrops = 0;
+
+        for (const [blockId, drops] of Object.entries(payload)) {
+            if (!Array.isArray(drops)) continue;
+
+            // Si el bloque no existía, se crea una nueva entrada
+            if (!mineralRecipes[blockId]) {
+                mineralRecipes[blockId] = [];
+                addedBlocks++;
+            }
+
+            for (const drop of drops) {
+                if (!drop.item || typeof drop.item !== "string") continue;
+
+                mineralRecipes[blockId].push({
+                    item: drop.item,
+                    amount: drop.amount ?? 1,
+                    chance: drop.chance ?? 0.1,
+                    tier: drop.tier ?? 0
+                });
+
+                addedDrops++;
+            }
+        }
+    } catch {
+    }
+});
          
