@@ -23,6 +23,9 @@
 			2
 		]
 	},
+	"capabilities": [
+		"pbr"
+	],
 	"modules": [
 		{
 			"type": "resources",
