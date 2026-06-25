@@ -1,4 +1,5 @@
-import './doriosAPI/main.js'
+import './DoriosAPI/index.js'
+import './DoriosCore/index.js'
 import './machinery/main.js'
 import './config/main.js'
 import './insight_injectors.js'
