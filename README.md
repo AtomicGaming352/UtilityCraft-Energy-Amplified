@@ -32,3 +32,5 @@ Items included in 1.0:
     > ~~Currently unobtainable as the scrapper is also unobtainable~~
  > [!Note]
  > The Scrapper and Scrap were removed from 1.0
+
+![Downloads](https://img.shields.io/github/downloads/AtomicGaming352/utilitycraft-energy-amplified/total)
